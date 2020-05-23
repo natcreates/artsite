@@ -1,4 +1,3 @@
-
 /**
  * Split the content into excerpt and remainder
  *

@@ -1,11 +1,13 @@
 /* breakpoints for media queries */
 $narrow: 400px;
 $mid: 740px;
+$mid-2: 1000px;
 $wide: 1200px;
 
 /* colours */
-$page-color: #2424bb;
-$text-color: #fff;
-$accent-color: #27a4de;
-$dark-color: #000;
+$page-color: #250E33;
+$text-color: #fcf7f7;
+$accent-color: #250E33;
+$dark-color: #250E33;
+$nav-color: #d3d3d3;
 

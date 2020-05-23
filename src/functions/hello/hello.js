@@ -1,6 +1,7 @@
-exports.handler = async (event, context) => {
+exports.handler = async (image, position, images) => {
   try {
-    return { statusCode: 200, body: `Hello from a serverless function!` };
+    const img = document.getElementById('easel');
+    img.src = ""
   } catch (err) {
     return { statusCode: 500, body: err.toString() };
   }

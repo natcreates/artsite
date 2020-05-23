@@ -1,0 +1,19 @@
+---
+layout: layouts/standard.njk
+pagination:
+    data: descriptions
+    size: 1
+    alias: description
+    resolve: values
+permalink: "artwork/{{ description.title | slug }}/"
+---
+<article>
+<figure class="artpage">
+<img src="/images/gallery/{{description.title | toFile }}" class="artpage__image {% if description.wide %} artpage__image--wide {% endif %}" />
+<figcaption>
+<h2>{{ description.title }}</h2>
+<em>{{ description.format }}</em>
+<p>{{ description.description }}</p>
+</figcaption>
+</figure>
+</article>

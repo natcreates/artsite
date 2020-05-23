@@ -1,0 +1,95 @@
+{
+  "ash": {
+    "title": "Ash",
+    "format": "Ink and digital",
+    "description": "Done for Inktober 2019. This I think accidentally expresses almost the entirety of 2019."
+  },
+  "bait": {
+    "title": "Bait",
+    "format": "Ink and digital",
+    "description": "Done for Inktober 2019. The highest costing, the hardest to regret."
+  },
+  "thaw": {
+    "title": "Thaw",
+    "format": "Ink and digital",
+    "description": "Only in the thaw do we see how much lies in pieces, which parts of us need calving. Another piece done for Inktober 2019, for the prompt 'freeze'.",
+    "featured": true
+  },
+  "enchanted": {
+    "title": "Enchanted",
+    "format": "Ink and digital",
+    "description": "Done for Inktober 2019 and inspired by the 1982 animated film, 'The Last Unicorn'. This was my favourite film as a child and it's still something I watch when I'm feeling lost. It's a sad, strange film with characters who say things like, \"there are no happy endings because nothing ends\" and \"I can feel this body dying all around me!\" (Also: \"oh god, I'm engaged to a Douglas fir!\") It explores enchantment in both the sense of losing it – losing our innocence, our unicorns – and as a state we find ourselves in all too easily when we lose our way: we become 'not ourselves'. It's possible to lose both our faith and who we are, and there was a point when I watched this film and realised I'd lost both. I'm still busy trying to free myself from one enchantment and find another. Drawing helps.",
+    "featured": true
+  },
+  "crowsnow": {
+    "title": "Crowsnow",
+    "format": "Ink and digital",
+    "description": "Done for Inktober 2019"
+  },
+  "awareness": {
+    "title": "Awareness",
+    "format": "Oils on paper",
+    "description": "I started this painting later 2018 in a state of shock, as something to do, using paints I'd never touched before. I didn't plan a concept, I just started painting a face looking up. For the three years prior, I'd had a box of art materials in the corner that sat there and looked at me while I worked on a writing project that ultimately went nowhere: the 'serious' project that it was not acceptable to take time away from, and even less acceptable to make imperfect - or real at all. I suppressed the visual side of me for a long, painful time. \nAnd then in a situation where I could not speak my feelings or approach them directly, I started a random, meaningless painting. I worked on it for a few weeks, then put it away. Then started another painting. Then another. I was thinking about endings, and violent beginnings, and feeling hope and desperation, and groping, by accident, in the right direction. It still perhaps means nothing at all. Except that just doing it marked a change in me. ",
+    "featured": true
+  },
+  "milkyboa": {
+    "title": "Milky Boa",
+    "format": "Oils on canvas",
+    "description": "A continuation of my obsession with snakes, partly inspired by a friend's photo of the Milky Way. Involves working a bit more methodically than I'm used to: crafting forms in white and then applying glazes of oil colour over the top.",
+    "easel": true
+  },
+  "self-portrait": {
+    "title": "Self-Portrait",
+    "format": "Oils on paper",
+    "description": "Begun during an online workshop run by the legendary visionary artist, Amanda Sage.",
+    "easel": true
+  },
+  "visitation": {
+    "title": "Visitation",
+    "format": "Oils on paper",
+    "description": "A practice piece that became a thing - I was trying a new palette of colours. Discovered that phthalo green really does get everywhere..."
+  },
+  "face": {
+    "title": "face",
+    "format": "Oils on paper",
+    "description": "A quick practice piece based off a photo that became increasingly pleasing. This is a sample of the kind of portrait work I'm available to do. ",
+    "featured": true
+  },
+  "herebedragons": {
+    "title": "Here be dragons",
+    "format": "Ink and digital",
+    "description": "Done for Inktober 2019. There's a mixture of serious and non-serious thoughts behind this one - hopefully the former is obvious. The latter comes from those cringe-worthy bits in Harry Potter where JK Rowling describes Harry's jealous crush as a 'monster in his chest'."
+  },
+  "overgrown": {
+    "title": "Overgrown",
+    "format": "Ink and digital",
+    "description": "Done for Inktober 2019. I was thinking of how my head felt 'overgrown' with thoughts, and this happened."
+  },
+  "legend": {
+    "title": "Legend",
+    "format": "Ink and digital",
+    "description": "Done for Inktober 2019. I was thinking about Marion Bradley's retelling of the Arthurian myth from the female perspective in The Mists of Avalon. I was quite taken by the idea of the Grail as an old pagan symbol of femininity expressing itself in a new way through a patriarchal religion - and as something forever inspiring, and forever lost."
+  },
+  "sling": {
+    "title": "Sling",
+    "format": "Ink and digital",
+    "description": "Done for Inktober 2019. I found this one hard to let go of and stop fiddling with. My personal sling is currently a pair of linked hands, for which I'm forever grateful."
+  },
+  "owlet-nightjar": {
+    "title": "Owlet-Nightjar",
+    "format": "Ink and digital",
+    "description": "Commission for a friend as a present for his partner.  I tried to include some elements of the Grampians national park (Mount Abrupt in the background, some Aboriginal rock art at the bottom) where apparently the owlet-nightar obsession began. And then I added leaves morphing into hands and other weirdness just BECAUSE."
+  },
+  "creatrix": {
+    "title": "Creatrix",
+    "format": "Oil on canvas",
+    "description": "Still a work in progress",
+    "featured": true
+  },
+  "ponyland": {
+    "title": "Ponyland",
+    "format": "Acrylics on board",
+    "wide": true,
+    "description": "Painted several years ago while staying in Nimbin, Australia at a small commune with the same name. Hopefully still living on a wall :)"
+  }
+}

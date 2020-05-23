@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+data: descriptions
+---
+<section>
+<article>
+<ul class="featured">
+ {% for image in collections.gallery %}
+{% if descriptions[image.name].featured %}
+<li><a href="/artwork/{{image.name}}"><img src="{{ image.path | relative | url }}" class="home-item__image artwork" /></a></li>
+{% endif %}
+{% endfor %}
+</ul>
+</article>
+    <a href="/gallery" class="button button--home">View full portfolio</a>
+<div class="container">
+<article class="easel">
+<h2 class="easel__title">On the easel</h2>
+ {% for image in collections.easel %}
+ {% if descriptions[image.name].easel %}
+      <button class="button--easel-left" onclick="({{image.name}})=>hello({{image.name}}, 'previous')">&#60;</button>
+      <figure class="home-item--easel">
+         <img src="{{ image.path | relative | url }}" class="easel__image" id="easel" />
+         <figcaption>
+            <h3 class="gallery__name">{{ descriptions[image.name].title }}</h3>
+            <em class="gallery__format">{{ descriptions[image.name].format }}</em>
+            <p class="gallery__description">{{ descriptions[image.name].description }}</p>
+         </figcaption>
+       </figure>
+        <button class="button--easel-right" onclick="({{image.name}})=>hello({{image.name}}, 'next')">&#62;</button>
+       {% endif %}
+      {% endfor %}
+</article>
+</div>
+</section>
+
+
+
+
+

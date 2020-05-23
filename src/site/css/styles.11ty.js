@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const postcss = require('postcss');
+const postcssNesting = require('postcss-nesting');
+
 
 // the file name as an entry point for postcss compilation
 // also used to define the output filename in our output /css folder.
@@ -23,7 +25,8 @@ module.exports = class {
       require('postcss-import'),
       require('postcss-mixins'),
       require('postcss-color-mix'),
-      require('cssnano')
+      require('cssnano'),
+      require('postcss-nesting')
     ])
     .process(rawCss, { from: rawFilepath })
     .then(result => result.css);

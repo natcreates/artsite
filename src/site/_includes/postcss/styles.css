@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ::-moz-selection {
@@ -23,13 +24,13 @@ body {
   text-align: center;
   background-color: $page-color;
   color: mix($text-color, $page-color, 90%);
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.8;
   min-height: 100vh;
   background:  $page-color;
-  background: url(/images/bg-grid.png), linear-gradient(320deg, $page-color 0%, $accent-color 100%);
+  background: linear-gradient(320deg, $page-color 0%, $accent-color 100%);
 
   @media (min-width: $narrow) {
     font-size: 18px;
@@ -39,36 +40,39 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  text-align: left;
-  @media (min-width: $mid) {
-    width: 600px;
-  };
-  @media (min-width: $wide) {
-    width: 700px;
-  };
+  width: 980px;
+  position: relative;
+
+  @media (max-width: $mid-2) {
+    width: 100%;
+  }
 }
 
 
 h1, h2, h3 {
   color: $text-color;
   font-weight: 600;
-  margin-top: 2em;
+  margin-top: 1.5em;
   margin-bottom:0.2em;
   line-height: 1;
+  font-family: 'Julius Sans One', sans-serif;
 }
 h1 {
-  font-size: 3em;
-  margin-top:0.4em;
-  margin-bottom:0.2em;
+  font-size: 0.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
   line-height: 1;
 
   @media (min-width: $mid) {
-    font-size: 5em;
+    font-size: 2em;
   };
   @media (min-width: $wide) {
-    font-size: 6em;
+    font-size: 3em;
   };
+}
+
+h4 {
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 p {
@@ -82,22 +86,13 @@ p {
   margin-bottom: 5em;
 }
 
-ul, ol {
-  padding-left: 1em;
-}
-
-a:link,
-a:visited {
-  color: $text-color;
+a {
+  color: silver;
   text-decoration: none;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: mix($text-color, $accent-color, 20%)
-}
-a:hover,
-a:focus {
-  color: $text-color;
-  border-bottom-color: $text-color;
+
+  &:hover, &:focus {
+              color: white;
+            }
 }
 
 .nakedLink a:link,
@@ -108,7 +103,11 @@ a:focus {
 }
 
 .nav {
-  padding-top: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $nav-color;
 
   li {
     display: inline;
@@ -117,30 +116,15 @@ a:focus {
   a:link,
   a:visited {
     display: inline-block;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: mix($text-color, $accent-color, 40%);
     border-bottom-style: none;
-    padding-top: 0.8em;
-    padding-bottom: 2em;
-    margin-left: 0;
-    margin-right: 0.7em;
     width: 9em;
-    text-align: left;
-    color: mix($text-color, $accent-color, 80%);
+    color: inherit;
     text-decoration: none;
   }
   a:hover,
   a:focus {
-      color: $text-color;
-      border-top-color: $text-color;
       border-bottom-style: none;
-  }
-
-  small {
-    display: block;
-    font-size: 0.7em;
-    color: mix($text-color,$accent-color, 60%);
+      color: #fff;
   }
 }
 
@@ -178,6 +162,16 @@ pre {
   }
 }
 
+main {
+  margin: 0;
+}
+
+header {
+  padding-top: 1em;
+  background-color: black;
+  border-bottom: 2px solid silver;
+}
+
 
 footer {
   margin-top: 6em;
@@ -199,4 +193,324 @@ footer {
     color: $text-color;
     border-bottom: solid 1px $text-color;
   }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+}
+
+input {
+  height: 34px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 3px;
+
+}
+
+button, .button {
+  box-shadow: none;
+  border: 2px solid silver;
+  padding: 10px 20px;
+  background-color: black;
+  color: silver;
+  border-radius: 4px;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Julius Sans One', sans-serif;
+
+  &:hover, &:focus {
+    background-color: silver;
+    color: black;
+  }
+}
+
+.button--home {
+  max-width: 300px;
+  margin: 1em auto;
+
+  &:visited, &:link {
+    border: 2px solid silver;
+  }
+}
+
+.button--easel-left, .button--easel-right {
+   border-radius: 50%;
+   top: 50%;
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 5;
+ }
+
+.button--easel-left {
+  left: -15px;
+}
+
+.button--easel-right {
+  right: -15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  padding: 20px 10px;
+
+  figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+}
+
+.gallery__link {
+  text-decoration: none;
+
+  &:link, &:visited {
+    text-decoration: none;
+  }
+
+  &:hover, &:focus {
+    background-color: rgba(100,100,100, 0.5);
+  }
+}
+
+.gallery__wrapper {
+  overflow: hidden;
+  height: 400px;
+}
+
+.gallery__image {
+  object-fit: contain;
+}
+
+.gallery__image--wide {
+  object-fit: cover;
+  max-width: 250%;
+}
+
+.gallery__name {
+  margin-bottom: 0;
+}
+
+.gallery__format {
+  margin-bottom: 0;
+  margin-top: 3px;
+  font-size: 0.9em;
+}
+
+.gallery__description {
+  font-size: 0.8em;
+}
+
+.featured {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  border-bottom: 2px solid silver;
+
+  li {
+    height: 480px;
+    overflow: hidden;
+    flex: 0 0 20%;
+
+@media (max-width: $mid-2) {
+  flex: 0 0 25%;
+}
+     @media (max-width: $mid) {
+      flex: 0 0 33.33%;
+       height: 300px;
+     }
+  }
+}
+
+.easel {
+  padding: 2em;
+  /*overflow: hidden;*/
+  max-width: 80%;
+  width: 100%;
+  margin: 2em auto 0;
+  position: relative;
+  border: 1px solid silver;
+
+
+
+  &:before {
+     content: "";
+     position: absolute;
+     z-index: 1;
+     top: 5px;
+     left: 5px;
+     right: 5px;
+     bottom: 5px;
+     border: 1px solid silver;
+   }
+}
+
+.easel__title {
+  margin-top: 0;
+  margin-bottom: 2em;
+  display: inline-block;
+  position: absolute;
+  top: -0.4em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: $dark-color;
+  padding: 0 1em;
+
+  /*&:before, &:after {*/
+  /*   content: "";*/
+  /*   position: absolute;*/
+  /*   height: 5px;*/
+  /*   border-bottom: 1px solid white;*/
+  /*   border-top: 1px solid white;*/
+  /*   top: 0;*/
+  /*   width: 50px;*/
+  /*}*/
+
+  /*&:before {*/
+  /*   left: 100%;*/
+  /*   margin-left: 15px;*/
+  /*}*/
+  /*&:after {*/
+  /*   right: 100%;*/
+  /*   margin-right: 15px;*/
+  /*}*/
+}
+
+.home-item--easel {
+  display: flex;
+  align-items: center;
+  /*height: 450px;*/
+  justify-content: flex-start;
+
+  @media (max-width: $mid) {
+    flex-direction: column;
+  }
+
+  img {
+    height: 450px;
+  }
+
+
+  figcaption, img {
+    flex: 0 0 50%;
+
+    @media (max-width: $mid) {
+      flex: 0 0 auto;
+     }
+  }
+
+  figcaption {
+    padding: 1em;
+    padding-top: 0;
+    text-align: center;
+  }
+
+&:after {
+   position: absolute;
+   /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+   content: "";
+   display: inline-block;
+   /* By using an em scale, the arrows will size with the font */
+   width: 0.4em;
+   height: 0.4em;
+   border-right: 0.2em solid black;
+   border-top: 0.2em solid black;
+   transform: rotate(45deg);
+   margin-right: 0.5em;
+ }
+}
+
+.home__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  text-align: left;
+}
+
+.home-item__image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.artwork {
+  transition: 0.3s ease all;
+  &:hover {
+   filter: saturate(0%);
+   transform: scale(1.05);
+ }
+}
+
+.easel__image {
+  height: 100%;
+  object-fit: cover;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.me {
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+  margin-right: 20px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact-image {
+  border-radius: 50%;
+  margin-left: 2em;
+  height: 400px;
+  width: 400px;
+}
+
+.artpage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2em 0;
+}
+
+.artpage__image {
+  max-height: 600px;
+  width: auto;
+  margin-right: 2em;
+}
+
+.artpage__image--wide {
+  max-width: 70%;
 }

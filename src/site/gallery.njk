@@ -1,0 +1,25 @@
+---
+title: Gallery
+layout: layouts/standard.njk
+data: descriptions
+---
+<section class="gallery">
+{% for image in collections.gallery %}
+<a class="gallery__link" href="/artwork/{{image.name}}">
+<figure>
+<div class="gallery__wrapper">
+<img src="{{ image.path | relative | url }}" class="artwork gallery__image {% if descriptions[image.name].wide %} gallery__image--wide {% endif %}" />
+</div>
+<figcaption>
+<h4 class="gallery__name">{{ descriptions[image.name].title }}</h4>
+<em class="gallery__format">{{ descriptions[image.name].format }}</em>
+</figcaption>
+</figure>
+</a>
+{% endfor %}
+</section>
+
+
+
+
+
