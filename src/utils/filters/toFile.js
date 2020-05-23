@@ -1,1 +1,1 @@
-module.exports = (str) => `${str.toLowerCase()}.jpg`;
+module.exports = (str) => `${str.toLowerCase().replace(' ', '')}.jpg`;

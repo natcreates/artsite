@@ -18,8 +18,7 @@
   "enchanted": {
     "title": "Enchanted",
     "format": "Ink and digital",
-    "description": "Done for Inktober 2019 and inspired by the 1982 animated film, 'The Last Unicorn'. This was my favourite film as a child and it's still something I watch when I'm feeling lost. It's a sad, strange film with characters who say things like, \"there are no happy endings because nothing ends\" and \"I can feel this body dying all around me!\" (Also: \"oh god, I'm engaged to a Douglas fir!\") It explores enchantment in both the sense of losing it – losing our innocence, our unicorns – and as a state we find ourselves in all too easily when we lose our way: we become 'not ourselves'. It's possible to lose both our faith and who we are, and there was a point when I watched this film and realised I'd lost both. I'm still busy trying to free myself from one enchantment and find another. Drawing helps.",
-    "featured": true
+    "description": "Done for Inktober 2019 and inspired by the 1982 animated film, 'The Last Unicorn'. This was my favourite film as a child and it's still something I watch when I'm feeling lost. It's a sad, strange film with characters who say things like, \"there are no happy endings because nothing ends\" and \"I can feel this body dying all around me!\" (Also: \"oh god, I'm engaged to a Douglas fir!\") It explores enchantment in both the sense of losing it – losing our innocence, our unicorns – and as a state we find ourselves in all too easily when we lose our way: we become 'not ourselves'. It's possible to lose both our faith and who we are, and there was a point when I watched this film and realised I'd lost both. I'm still busy trying to free myself from one enchantment and find another. Drawing helps."
   },
   "crowsnow": {
     "title": "Crowsnow",
@@ -83,7 +82,7 @@
   "creatrix": {
     "title": "Creatrix",
     "format": "Oil on canvas",
-    "description": "Still a work in progress",
+    "description": "Still a work in progress, this was begun during a two-week Visionary Art Seminar taught by Daniel Mirante and organised via the Academy of Visionary Art. This was my first experience of the Mischtechnik: a process that involves the layering of tempera grassa and oil glazes to create a luminous effect. This piece draws heavily on what was in my heart at the time: grief, a loss of identity, a hope for rebirth, and an urge to paint a new self into existence.",
     "featured": true
   },
   "ponyland": {
@@ -91,5 +90,12 @@
     "format": "Acrylics on board",
     "wide": true,
     "description": "Painted several years ago while staying in Nimbin, Australia at a small commune with the same name. Hopefully still living on a wall :)"
+  },
+  "weepheal": {
+    "title": "WeepHeal",
+    "format": "Oils on canvas",
+    "wide": true,
+    "featured": true,
+    "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chalten, a small village in Argentina. I discovered glacial lakes clasped in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. Utterly heartbroken, I was unshielded and the beauty of that place burned all the more into me. I painted this to heal; it worked, somewhat."
   }
 }
