@@ -1,7 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const fg = require('fast-glob');
-const galleryImagePaths = fg.sync(['**/dist/images/gallery/*']);
-const easelImagePaths = fg.sync(['**/dist/images/easel/*']);
+const galleryImagePaths = fg.sync(['**/src/site/images/gallery/*']);
+const easelImagePaths = fg.sync(['**/src/site/images/easel/*']);
 let galleryImagesOutput = [];
 let easelImagesOutput = [];
 
@@ -11,11 +11,11 @@ module.exports = function(config) {
   config.addLayoutAlias('default', 'layouts/base.njk');
 
   for (let path of galleryImagePaths) {
-    const name = path.replace('dist/images/gallery/', '').replace(/\..*/, '');
+    const name = path.replace('src/site/images/gallery/', '').replace(/\..*/, '');
     galleryImagesOutput.push({ path, name });
   }
   for (let path of easelImagePaths) {
-    const name = path.replace('dist/images/easel/', '').replace(/\..*/, '');
+    const name = path.replace('src/site/images/easel/', '').replace(/\..*/, '');
     easelImagesOutput.push({ path, name });
   }
   // }
@@ -47,7 +47,7 @@ module.exports = function(config) {
 
   config.addFilter(
       "relative",
-      (page, root = "/") => page.replace('dist', '')
+      (page, root = "/") => page.replace('src/site', '')
   );
 
   // pass some assets right through
