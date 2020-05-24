@@ -16,10 +16,11 @@ data: descriptions
 <div class="container">
 <article class="easel">
 <h2 class="easel__title">On the easel</h2>
- {% for image in collections.easel %}
- {% if descriptions[image.name].easel %}
-      <button class="button--easel-left" onclick="({{image.name}})=>hello({{image.name}}, 'previous')">&#60;</button>
-      <figure class="home-item--easel">
+      <button class="easel__button--prev">&#60;</button>
+      <div class="carousel">
+       {% for image in collections.easel %}
+       {% if descriptions[image.name].easel %}
+      <figure class="easel__item">
          <img src="{{ image.path | relative | url }}" class="easel__image" id="easel" />
          <figcaption>
             <h3 class="gallery__name">{{ descriptions[image.name].title }}</h3>
@@ -27,9 +28,10 @@ data: descriptions
             <p class="gallery__description">{{ descriptions[image.name].description }}</p>
          </figcaption>
        </figure>
-        <button class="button--easel-right" onclick="({{image.name}})=>hello({{image.name}}, 'next')">&#62;</button>
-       {% endif %}
-      {% endfor %}
+              {% endif %}
+             {% endfor %}
+             </div>
+        <button class="easel__button--next">&#62;</button>
 </article>
 </div>
 </section>

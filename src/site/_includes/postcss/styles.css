@@ -229,6 +229,11 @@ button, .button {
     background-color: silver;
     color: black;
   }
+
+    &:focus {
+       border: 2px solid silver;
+      outline: 0;
+     }
 }
 
 .button--home {
@@ -238,26 +243,6 @@ button, .button {
   &:visited, &:link {
     border: 2px solid silver;
   }
-}
-
-.button--easel-left, .button--easel-right {
-   border-radius: 50%;
-   top: 50%;
-   position: absolute;
-   width: 40px;
-   height: 40px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   z-index: 5;
- }
-
-.button--easel-left {
-  left: -15px;
-}
-
-.button--easel-right {
-  right: -15px;
 }
 
 .gallery {
@@ -339,9 +324,17 @@ button, .button {
   }
 }
 
+.carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
 .easel {
   padding: 2em;
-  /*overflow: hidden;*/
   max-width: 80%;
   width: 100%;
   margin: 2em auto 0;
@@ -374,31 +367,18 @@ button, .button {
   background-color: $dark-color;
   padding: 0 1em;
 
-  /*&:before, &:after {*/
-  /*   content: "";*/
-  /*   position: absolute;*/
-  /*   height: 5px;*/
-  /*   border-bottom: 1px solid white;*/
-  /*   border-top: 1px solid white;*/
-  /*   top: 0;*/
-  /*   width: 50px;*/
-  /*}*/
-
-  /*&:before {*/
-  /*   left: 100%;*/
-  /*   margin-left: 15px;*/
-  /*}*/
-  /*&:after {*/
-  /*   right: 100%;*/
-  /*   margin-right: 15px;*/
-  /*}*/
 }
 
-.home-item--easel {
+.easel__item {
   display: flex;
   align-items: center;
-  /*height: 450px;*/
+  min-width: 100%;
   justify-content: flex-start;
+  opacity: 0;
+  position: absolute;
+  top:0;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
 
   @media (max-width: $mid) {
     flex-direction: column;
@@ -422,21 +402,47 @@ button, .button {
     padding-top: 0;
     text-align: center;
   }
-
-&:after {
-   position: absolute;
-   /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
-   content: "";
-   display: inline-block;
-   /* By using an em scale, the arrows will size with the font */
-   width: 0.4em;
-   height: 0.4em;
-   border-right: 0.2em solid black;
-   border-top: 0.2em solid black;
-   transform: rotate(45deg);
-   margin-right: 0.5em;
- }
 }
+
+.easel__item.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.easel__item.prev,
+.easel__item.next {
+  z-index: 800;
+}
+.easel__item.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+.easel__item.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+
+.easel__button--prev, .easel__button--next {
+  border-radius: 50%;
+  top: 50%;
+  position: absolute;
+  width: 40px;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transform: translateY(-50%);
+}
+
+.easel__button--prev {
+  left: -1em;
+}
+
+.easel__button--next {
+  right: -1em;
+}
+
 
 .home__title {
   position: absolute;
