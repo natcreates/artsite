@@ -13,7 +13,8 @@
     "title": "Thaw",
     "format": "Ink and digital",
     "description": "Only in the thaw do we see how much lies in pieces, which parts of us need calving. Another piece done for Inktober 2019, for the prompt 'freeze'.",
-    "featured": true
+    "featured": true,
+    "featuredOrder": 1
   },
   "enchanted": {
     "title": "Enchanted",
@@ -25,11 +26,12 @@
     "format": "Ink and digital",
     "description": "Done for Inktober 2019"
   },
-  "awareness": {
-    "title": "Awareness",
+  "reach": {
+    "title": "Reach",
     "format": "Oils on paper",
-    "description": "I started this painting later 2018 in a state of shock, as something to do, using paints I'd never touched before. I didn't plan a concept, I just started painting a face looking up. For the three years prior, I'd had a box of art materials in the corner that sat there and looked at me while I worked on a writing project that ultimately went nowhere: the 'serious' project that it was not acceptable to take time away from, and even less acceptable to make imperfect - or real at all. I suppressed the visual side of me for a long, painful time. \nAnd then in a situation where I could not speak my feelings or approach them directly, I started a random, meaningless painting. I worked on it for a few weeks, then put it away. Then started another painting. Then another. I was thinking about endings, and violent beginnings, and feeling hope and desperation, and groping, by accident, in the right direction. It still perhaps means nothing at all. Except that just doing it marked a change in me. ",
-    "featured": true
+    "description": "I started this painting later 2018 in a state of shock, as something to do, using paints I'd never touched before. For the three years prior, I'd had a box of art materials in the corner that sat there and looked at me while I worked on a writing project that ultimately went nowhere. I suppressed the visual side of me for a long, painful time. \nAnd then in a situation where I could not speak my feelings or approach them directly, I started a random, 'meaningless' painting. I worked on it for a few weeks, then put it away. Then started another painting. Then another. I was thinking about endings, and violent beginnings, and feeling hope and desperation, and groping, by accident, in the right direction. It still perhaps means nothing at all. Except that just doing it marked a change in me. ",
+    "featured": true,
+    "featuredOrder": 4
   },
   "milkyboa": {
     "title": "Milky Boa",
@@ -46,7 +48,7 @@
   "beltane": {
     "title": "Beltane",
     "format": "Oils on canvas",
-    "description": "Late-night whiskey-fuelled painting. Sketching out an idea that came to me a week ago, partly inspired by Beltane, and partly by the Star Tarot card, and mainly by my feelings of the last few weeks. A woman uses her paintbrush to stoke her own creative fires and looks up at a sky of fertilising (meteor) showers. The spear that stabbed her is at her side, a palette / lake is at her feet and a snake is on her arm. Power is growing, heat is returning.",
+    "description": "Late-night whiskey-fuelled painting. Sketching out an idea that came to me a week ago, partly inspired by Beltane, and partly by the Star Tarot card. A woman uses her paintbrush to stoke her own creative fires and looks up at a sky of fertilising (meteor) showers. The spear that stabbed her is at her side, a palette / lake is at her feet and a snake is on her arm. Power is growing, heat is returning.",
     "easel": true
   },
   "visitation": {
@@ -54,11 +56,12 @@
     "format": "Oils on paper",
     "description": "A practice piece that became a thing - I was trying a new palette of colours. Discovered that phthalo green really does get everywhere..."
   },
-  "face": {
-    "title": "face",
+  "midnight": {
+    "title": "midnight",
     "format": "Oils on paper",
-    "description": "A quick practice piece based off a photo that became increasingly pleasing. This is a sample of the kind of portrait work I'm available to do. ",
-    "featured": true
+    "description": "A quick practice piece based off a photo that became increasingly pleasing. This is a sample of the kind of portrait work I most enjoy, and am very open for commissions around.",
+    "featured": true,
+    "featuredOrder": 2
   },
   "herebedragons": {
     "title": "Here be dragons",
@@ -89,7 +92,8 @@
     "title": "Creatrix",
     "format": "Oil on canvas",
     "description": "Still a work in progress, this was begun during a two-week Visionary Art Seminar taught by Daniel Mirante and organised via the Academy of Visionary Art. This was my first experience of the Mischtechnik: a process that involves the layering of tempera grassa and oil glazes to create a luminous effect. This piece draws heavily on what was in my heart at the time: grief, a loss of identity, a hope for rebirth, and an urge to paint a new self into existence.",
-    "featured": true
+    "featured": true,
+    "featuredOrder": 0
   },
   "ponyland": {
     "title": "Ponyland",
@@ -102,6 +106,7 @@
     "format": "Oils on canvas",
     "wide": true,
     "featured": true,
+    "featuredOrder": 3,
     "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chalten, a small village in Argentina. I discovered glacial lakes clasped in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. Utterly heartbroken, I was unshielded and the beauty of that place burned all the more into me. I painted this to heal; it worked, somewhat."
   }
 }
