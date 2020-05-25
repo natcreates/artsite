@@ -3,10 +3,24 @@ title: Gallery
 layout: layouts/standard.njk
 data: descriptions
 ---
-<section class="gallery">
+<article class="gallery-featured">
+<a class="gallery__link" href="/artwork/weepheal">
+<figure class="gallery__figure gallery__figure--featured">
+<div class="gallery__wrapper--featured">
+<img src="{{ '/images/gallery/weepheal.jpg' | url }}" class="artwork gallery__image" />
+</div>
+<figcaption>
+<h4 class="gallery__name">Featured: WeepHeal</h4>
+<em class="gallery__format">Oils on canvas</em>
+</figcaption>
+</figure>
+</a>
+</article>
+<article class="gallery">
 {% for image in collections.gallery %}
+{% if descriptions[image.name].galleryFeatured !== true %}
 <a class="gallery__link" href="/artwork/{{image.name}}">
-<figure>
+<figure class="gallery__figure">
 <div class="gallery__wrapper">
 <img src="{{ image.path | relative | url }}" class="artwork gallery__image {% if descriptions[image.name].wide %} gallery__image--wide {% endif %}" />
 </div>
@@ -16,8 +30,9 @@ data: descriptions
 </figcaption>
 </figure>
 </a>
+{% endif %}
 {% endfor %}
-</section>
+</article>
 
 
 

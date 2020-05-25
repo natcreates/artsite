@@ -57,7 +57,7 @@
     "description": "A practice piece that became a thing - I was trying a new palette of colours. Discovered that phthalo green really does get everywhere..."
   },
   "midnight": {
-    "title": "midnight",
+    "title": "Midnight",
     "format": "Oils on paper",
     "description": "A quick practice piece based off a photo that became increasingly pleasing. This is a sample of the kind of portrait work I most enjoy, and which I'm very open for commissions around.",
     "featured": true,
@@ -107,6 +107,7 @@
     "wide": true,
     "featured": true,
     "featuredOrder": 3,
+    "galleryFeatured": true,
     "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chalten, a small village in Argentina. I discovered glacial lakes clasped in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. The trip and the following months marked the darkest time of my life. I painted this to heal; it worked, somewhat."
   }
 }
