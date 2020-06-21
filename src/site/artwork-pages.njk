@@ -1,19 +1,25 @@
 ---
 layout: layouts/standard.njk
 pagination:
-    data: descriptions
+    data: collections.gallery
     size: 1
-    alias: description
+    alias: image
     resolve: values
-permalink: "artwork/{{ description.title | slug }}/"
+    before: (data) => data.filter((item) => !item.easel)
+
+permalink: "artwork/{{ image.name | slug }}/"
 ---
-<article>
+<article class="artpage-wrapper">
 <figure class="artpage">
-<img src="/images/gallery/{{description.title | toFile }}" class="artpage__image {% if description.wide %} artpage__image--wide {% endif %}" />
+<img src="/images/gallery/{{image.name | slug }}.jpg" class="artpage__image {% if descriptions[image.name].wide %} artpage__image--wide {% endif %}" />
 <figcaption>
-<h2>{{ description.title }}</h2>
-<em>{{ description.format }}</em>
-<p>{{ description.description }}</p>
+<h2>{{ descriptions[image.name].title }}</h2>
+<em>{{ descriptions[image.name].format }}</em>
+<p>{{ descriptions[image.name].description }}</p>
 </figcaption>
 </figure>
+<div class="artpage__links">
+{% if pagination.previousPageLink %}<a href="{{pagination.previousPageLink}}">&#8592; Previous</a>{% else %}<a href="{{pagination.href.last}}">&#8592; Previous</a>{% endif %}{% if pagination.nextPageLink %}<a href="{{pagination.nextPageLink}}">Next &#8594;</a>{% else %}<a href="{{pagination.href.first}}">Next &#8594;</a>{% endif %}
+</div>
 </article>
+

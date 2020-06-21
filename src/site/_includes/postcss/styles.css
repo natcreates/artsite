@@ -64,10 +64,10 @@ h1 {
   line-height: 1;
 
   @media (min-width: $mid) {
-    font-size: 1.9em;
+    font-size: 1.8em;
   };
   @media (min-width: $wide) {
-    font-size: 2.5em;
+    font-size: 2.2em;
   };
 }
 
@@ -103,8 +103,8 @@ a {
 }
 
 .nav {
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
   text-transform: uppercase;
   font-weight: 500;
   color: $nav-color;
@@ -176,16 +176,16 @@ main {
 }
 
 header {
-  padding-top: 1em;
+  padding-top: 0.6em;
   background-color: black;
   border-bottom: 2px solid silver;
 }
 
 
 footer {
-  margin-top: 6em;
-  padding-top: 4em;
-  padding-bottom: 6em;
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: mix($text-color, $accent-color, 10%);
@@ -371,15 +371,6 @@ button, .button {
   }
 }
 
-.carousel {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
-  transform-style: preserve-3d;
-}
-
 .easel {
   padding: 2em;
   max-width: 80%;
@@ -387,6 +378,7 @@ button, .button {
   margin: 2em auto 0;
   position: relative;
   border: 1px solid silver;
+  height: 520px;
   @media (max-width: $mid) {
      padding-top: 3em;
   }
@@ -402,6 +394,26 @@ button, .button {
      border: 1px solid silver;
    }
 }
+
+.easel__carousel-inner {
+  /*overflow: hidden;*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transform-style: preserve-3d;
+}
+
+.easel__carousel {
+  overflow: hidden;
+  position: absolute;
+  top: 2em;
+  right: 1em;
+  left: 1em;
+  bottom: 1em;
+  height: 450px;
+}
+
 
 .easel__title {
   margin-top: 0;
@@ -420,13 +432,12 @@ button, .button {
 .easel__item {
   display: flex;
   align-items: center;
-  width: 0;
   justify-content: flex-start;
   opacity: 0;
   position: absolute;
   top:0;
   z-index: 100;
-  transition: transform .5s, opacity .5s, z-index .5s;
+  transition: all .5s ease-in-out;
 
   @media (max-width: $mid) {
     flex-direction: column;
@@ -436,12 +447,13 @@ button, .button {
     height: 450px;
   }
 
-
   figcaption, img {
     flex: 0 0 50%;
 
+
     @media (max-width: $mid) {
       flex: 0 0 auto;
+      width: 0;
      }
   }
 
@@ -508,6 +520,11 @@ button, .button {
 .home-item__image {
   height: 100%;
   object-fit: cover;
+
+  li:nth-child(5) & {
+    object-position: left;
+
+   }
 }
 
 .artwork {
@@ -587,12 +604,19 @@ img {
 
 }
 
+.artpage-wrapper {
+  height: 600px;
+  position: relative;
+  margin-bottom: 3em;
+}
+
 .artpage {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 2em;
+  height: 100%;
 
 @media (min-width: $mid) {
   margin: 2em 0;
@@ -612,4 +636,38 @@ img {
 
 .artpage__image--wide {
   max-width: 70%;
+}
+
+.artpage__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  right: 0;
+}
+
+.artpage__links--no-next {
+  justify-content: flex-end;
+}
+
+.instagram {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover, &:focus{
+  background-color: rgba(100,100,100, 0.5);
+  text-decoration: none;
+  border-bottom: none;
+  }
+}
+
+.instagram__img {
+  width: 15px;
+  height: 15px;
 }

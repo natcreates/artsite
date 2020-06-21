@@ -33,7 +33,7 @@
     "featured": true,
     "featuredOrder": 4
   },
-  "milkyboa": {
+  "milky-boa": {
     "title": "Milky Boa",
     "format": "Oils on canvas",
     "description": "A continuation of my obsession with snakes, partly inspired by a friend's photo of the Milky Way. Involves working a bit more methodically than I'm used to: crafting forms in white and then applying glazes of oil colour over the top.",
@@ -63,7 +63,7 @@
     "featured": true,
     "featuredOrder": 2
   },
-  "herebedragons": {
+  "here-be-dragons": {
     "title": "Here be dragons",
     "format": "Ink and digital",
     "description": "Done for Inktober 2019. There's a mixture of serious and non-serious thoughts behind this one - hopefully the former is obvious. The latter comes from those cringe-worthy bits in Harry Potter where JK Rowling describes Harry's jealous crush as a 'monster in his chest'."
@@ -101,13 +101,13 @@
     "wide": true,
     "description": "Painted several years ago while staying in Nimbin, Australia at a small commune with the same name. Hopefully still living on a wall :)"
   },
-  "weepheal": {
-    "title": "WeepHeal",
+  "in-their-arms": {
+    "title": "In Their Arms",
     "format": "Oils on canvas",
     "wide": true,
     "featured": true,
     "featuredOrder": 3,
     "galleryFeatured": true,
-    "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chalten, a small village in Argentina. I discovered glacial lakes clasped in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. The trip and the following months marked the darkest time of my life. I painted this to heal; it worked, somewhat."
+    "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chaltén, a small village in Argentina. I discovered glacial lakes helps in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. The trip and the following months marked a dark time in my life. I painted this to heal; it worked, somewhat."
   }
 }

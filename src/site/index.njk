@@ -17,7 +17,8 @@ data: descriptions
 <article class="easel">
 <h2 class="easel__title">On the easel</h2>
       <button class="easel__button--prev">&#60;</button>
-      <div class="carousel">
+      <div class="easel__carousel">
+      <div class="easel__carousel-inner">
        {% for image in collections.easel %}
        {% if descriptions[image.name].easel %}
       <figure class="easel__item">
@@ -31,6 +32,7 @@ data: descriptions
               {% endif %}
              {% endfor %}
              </div>
+          </div>
         <button class="easel__button--next">&#62;</button>
 </article>
 </div>
