@@ -5,10 +5,8 @@ data: descriptions
 <section>
 <article>
 <ul class="featured">
- {% for image in collections.gallery | sort(descriptions[image.name].featuredOrder) %}
-{% if descriptions[image.name].featured %}
+{% for image in collections.gallery | getFeatured %}
 <li><a href="/artwork/{{image.name}}"><img src="{{ image.path | relative | url }}" class="home-item__image artwork" /></a></li>
-{% endif %}
 {% endfor %}
 </ul>
 </article>

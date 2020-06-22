@@ -25,6 +25,7 @@ module.exports = function(config) {
   // Add some utility filters
   config.addFilter("squash", require("./src/utils/filters/squash.js") );
   config.addFilter("dateDisplay", require("./src/utils/filters/date.js") );
+  config.addFilter("getFeatured", require("./src/utils/filters/getFeatured") );
 
   // add support for syntax highlighting
   config.addPlugin(syntaxHighlight);
