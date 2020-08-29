@@ -107,7 +107,13 @@
     "wide": true,
     "featured": true,
     "featuredOrder": 1,
-    "galleryFeatured": true,
     "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chaltén, a small village in Argentina. I discovered glacial lakes helps in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. The trip and the following months marked a dark time in my life. I painted this to heal; it worked, somewhat."
+  },
+  "web-of-being": {
+    "title": "Web of Being",
+    "format": "Acrylics on linen",
+    "wide": true,
+    "galleryFeatured": true,
+    "description": "Dedicated to nature's recyclers, mushrooms, and the interconnectedness of life and death, fallen trees and fallen people. Painted for the Mushroom Magic online exhibition run through the Vision Train (https://www.visiontrain.org/)"
   }
 }
