@@ -11,7 +11,7 @@ module.exports = function(config) {
   config.addLayoutAlias('default', 'layouts/base.njk');
 
   for (let path of galleryImagePaths) {
-    const name = path.replace('src/site/images/gallery/', '').replace(/\..*/, '');
+    const name = path.replace('src/site/images/gallery/', '').replace(/@\dx\..*/, '');
     galleryImagesOutput.push({ path, name });
   }
   for (let path of easelImagePaths) {
