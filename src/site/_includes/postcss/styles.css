@@ -227,7 +227,6 @@ input, textarea {
 
 button, .button {
   box-shadow: none;
-  border: 2px solid silver;
   padding: 10px 20px;
   background-color: black;
   color: silver;
@@ -236,6 +235,7 @@ button, .button {
   display: block;
   text-decoration: none;
   font-size: 1em;
+  font-weight: 600;
   font-family: 'Julius Sans One', sans-serif;
 
   &:hover, &:focus {
@@ -252,10 +252,6 @@ button, .button {
 .button--home {
   max-width: 300px;
   margin: 1em auto;
-
-  &:visited, &:link {
-    border: 2px solid silver;
-  }
 }
 
 .strapline {

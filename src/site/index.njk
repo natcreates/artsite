@@ -12,27 +12,6 @@ data: descriptions
 </article>
     <a href="/gallery" class="button button--home">View full portfolio</a>
 <div class="container">
-<article class="easel">
-<h2 class="easel__title">On the easel</h2>
-      <button class="easel__button--prev">&#60;</button>
-      <div class="easel__carousel">
-      <div class="easel__carousel-inner">
-       {% for image in collections.easel %}
-       {% if descriptions[image.name].easel %}
-      <figure class="easel__item">
-         <img src="{{ image.path | relative | url }}" class="easel__image" id="easel" />
-         <figcaption>
-            <h3 class="gallery__name">{{ descriptions[image.name].title }}</h3>
-            <em class="gallery__format">{{ descriptions[image.name].format }}</em>
-            <p class="gallery__description">{{ descriptions[image.name].description }}</p>
-         </figcaption>
-       </figure>
-              {% endif %}
-             {% endfor %}
-             </div>
-          </div>
-        <button class="easel__button--next">&#62;</button>
-</article>
 </div>
 </section>
 
