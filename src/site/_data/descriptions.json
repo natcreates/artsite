@@ -21,6 +21,11 @@
     "format": "Ink and digital",
     "description": "Done for Inktober 2019 and inspired by the 1982 animated film, 'The Last Unicorn'. This was my favourite film as a child and it's still something I watch when I'm feeling lost. It's a sad, strange film with characters who say things like, \"there are no happy endings because nothing ends\" and \"I can feel this body dying all around me!\" (Also: \"oh god, I'm engaged to a Douglas fir!\") It explores enchantment in both the sense of losing it – losing our innocence – and as a state we find ourselves in all too easily when we lose our way: we become 'not ourselves'."
   },
+  "fall-rise": {
+    "title": "Fall and Rise",
+    "format": "Oils and tempera grassa on linen",
+    "description": "Work in progess. A work exploring the death of one self necessary for another to rise."
+  },
   "reach": {
     "title": "Reach",
     "format": "Oils on paper",
@@ -95,13 +100,18 @@
     "featured": true,
     "featuredOrder": 3
   },
+  "root-and-branch": {
+    "title": "Root and Branch",
+    "format": "Acrylics on canvas",
+    "description": "Inspired by the idea that we are harmed through relationship, and heal through relationship.",
+  },
   "in-their-arms": {
     "title": "In Their Arms",
     "format": "Oils on canvas",
     "wide": true,
     "featured": true,
     "featuredOrder": 1,
-    "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chaltén, a small village in Argentina. I discovered glacial lakes helps in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. The trip and the following months marked a dark time in my life. I painted this to heal; it worked, somewhat."
+    "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chaltén, a small village in Argentina. I discovered glacial lakes held in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. The trip and the following months marked a dark time in my life. I painted this to heal; it worked, somewhat."
   },
   "web-of-being": {
     "title": "Web of Being",
