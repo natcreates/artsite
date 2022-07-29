@@ -1,128 +1,150 @@
 {
   "ash": {
     "title": "Ash",
+    "gallery": "drawings",
     "format": "Ink and digital",
-    "description": "Done for Inktober 2019. I think this accidentally expresses almost the entirety of 2019 for me."
+    "description": "Inktober 2019"
   },
   "bait": {
+    "gallery": "drawings",
     "title": "Bait",
     "format": "Ink and digital",
-    "description": "Done for Inktober 2019. The highest costing, the hardest to regret."
+    "description": "Inktober 2019"
   },
   "thaw": {
+    "gallery": "drawings",
     "title": "Thaw",
     "format": "Ink and digital",
-    "description": "Only in the thaw do we see how much lies in pieces, which parts of us need calving. Another piece done for Inktober 2019, for the prompt 'freeze'.",
-    "featured": true,
+    "description": "Inktober 2019",
+    "featured": false,
     "featuredOrder": 2
   },
   "enchanted": {
+    "gallery": "drawings",
     "title": "Enchanted",
     "format": "Ink and digital",
-    "description": "Done for Inktober 2019 and inspired by the 1982 animated film, 'The Last Unicorn'. This was my favourite film as a child and it's still something I watch when I'm feeling lost. It's a sad, strange film with characters who say things like, \"there are no happy endings because nothing ends\" and \"I can feel this body dying all around me!\" (Also: \"oh god, I'm engaged to a Douglas fir!\") It explores enchantment in both the sense of losing it – losing our innocence – and as a state we find ourselves in all too easily when we lose our way: we become 'not ourselves'."
+    "description": "Inktober 2019"
   },
   "fall-rise": {
+    "gallery": "paintings",
     "title": "Fall and Rise",
-    "format": "Oils and tempera grassa on linen",
-    "description": "Work in progess. A work exploring the death of one self necessary for another to rise."
+    "format": "Oils and tempera grassa/Canvas",
+    "description": "24x16 inches, WIP."
   },
   "reach": {
     "title": "Reach",
+    "gallery": "paintings",
     "format": "Oils on paper",
-    "description": "I started this painting in late 2018, as something to do, using paints I'd never touched before. For the three years prior, I'd had a box of art materials in the corner that sat there and looked at me while I worked on a writing project that ultimately went nowhere. I suppressed the visual side of me for a long, painful time. And then in a situation where I could not speak my feelings or approach them directly, I started a random, 'meaningless' painting. I worked on it for a few weeks, then put it away. Then started another painting. Then another. I was thinking about endings, and violent beginnings, and feeling hope and desperation, and groping, by accident, in the right direction. It still perhaps means nothing at all. Except that just doing it marked a change in me. "
+    "description": "A3, 2019"
   },
   "milky-boa": {
     "title": "Milky Boa",
-    "format": "Oils on canvas",
-    "description": "A continuation of my obsession with snakes, partly inspired by a friend's photo of the Milky Way. Involves working a bit more methodically than I'm used to: crafting forms in white and then applying glazes of oil colour over the top.",
+    "gallery": "paintings",
+    "format": "Oils/Canvas",
+    "description": "2020-",
     "easel": true
   },
   "self-portrait": {
     "title": "Self-Portrait",
+    "gallery": "paintings",
     "format": "Oils on paper",
     "description": "Begun during an online workshop run by the legendary visionary artist, Amanda Sage.",
     "easel": true
   },
   "visitation": {
     "title": "Visitation",
-    "format": "Oils on paper",
-    "description": "A practice piece that became a thing - I was trying a new palette of colours. Discovered that phthalo green really does get everywhere..."
+    "gallery": "paintings",
+    "format": "Oils/Paper",
+    "description": "A3, 2020"
   },
   "midnight": {
     "title": "Midnight",
-    "format": "Oils on paper",
-    "description": "A quick practice piece based off a photo that became increasingly pleasing. This is a sample of the kind of portrait work I most enjoy, and which I'm very open for commissions around.",
+    "gallery": "paintings",
+    "format": "Oils/Paper",
+    "description": "A3, 2020",
     "featured": true,
-    "featuredOrder": 4
+    "featuredOrder": 2
   },
   "here-be-dragons": {
+    "gallery": "drawings",
     "title": "Here be dragons",
     "format": "Ink and digital",
-    "description": "Done for Inktober 2019. There's a mixture of serious and non-serious thoughts behind this one - hopefully the former is obvious. The latter comes from those cringe-worthy bits in Harry Potter where JK Rowling describes Harry's jealous crush as a 'monster in his chest'."
+    "description": "Inktober 2019"
   },
   "overgrown": {
+    "gallery": "drawings",
     "title": "Overgrown",
     "format": "Ink and digital",
-    "description": "Done for Inktober 2019. I was thinking of how my head felt 'overgrown' with thoughts, and this happened."
+    "description": "Inktober 2019"
   },
   "legend": {
+    "gallery": "drawings",
     "title": "Legend",
     "format": "Ink and digital",
-    "description": "Done for Inktober 2019 to the prompt of the same word. I was thinking about Marion Bradley's retelling of the Arthurian myth from the female perspective in The Mists of Avalon. I was quite taken by the idea of the Grail as an old pagan feminine symbol expressing itself in a new way through a patriarchal religion - and as something forever inspiring, and forever lost."
+    "description": "Inktober 2019"
   },
   "sling": {
+    "gallery": "drawings",
     "title": "Sling",
     "format": "Ink and digital",
-    "description": "Done for Inktober 2019 to the prompt of the same word. My current personal sling, the pair of linked hands, belong to the couple of friends who provided this artist with a room (and a studio!)."
+    "description": "Inktober 2019"
   },
   "owlet-nightjar": {
+    "gallery": "drawings",
     "title": "Owlet-Nightjar",
     "format": "Ink and digital",
     "description": "Commission for a friend as a present for his partner. I tried to include some elements of the Grampians national park (Mount Abrupt in the background, some Aboriginal rock art at the bottom) where apparently the owlet-nightar obsession began. And then I added leaves morphing into hands and other weirdness just BECAUSE."
   },
   "creatrix": {
     "title": "Creatrix",
-    "format": "Oils and tempera grassa on canvas",
-    "description": "Still a work in progress, this was begun during a two-week Visionary Art Seminar taught by Daniel Mirante and organised via the Academy of Visionary Art. This was my first experience of the Mischtechnik: a process that involves the layering of tempera grassa and oil glazes to create a luminous effect. This piece draws heavily on what was happening for me at the time: grief, a loss of identity, a hope for rebirth, and an urge to paint a new self into existence.",
+    "gallery": "paintings",
+    "format": "Oils and tempera grassa/Canvas",
+    "description": "30x20 inches, 2019-WIP",
     "featured": true,
     "featuredOrder": 5
   },
   "ponyland": {
     "title": "Ponyland",
-    "format": "Acrylics on board",
+    "gallery": "paintings",
+    "format": "Acrylics/Large board",
     "wide": true,
-    "description": "Painted several years ago while staying in Nimbin, Australia at a small commune with the same name. Hopefully still living on a wall :)"
+    "description": "Wall sized, 2015"
   },
   "renaissance": {
     "title": "Renaissance",
-    "format": "Oils and tempera grassa on linen",
-    "description": "Created as part of an online visionary art course run by Amanda Sage. This is the third of a series of three paintings recording a personal journey of death and rebirth. I painted it wanting it to mark the end of a journey, as a moment of day returning after a long, long night, while being aware that I still needed to integarate the past. The skins we shed are still true to us, still part of the landscape of life. Progress is not linear but three-dimensional, a widening as well as an ascent. I was thinking about the world soul becoming mortal in order to understand itself, and our previous selves forming the seeds from which we can flower.",
+    "gallery": "paintings",
+    "format": "Oils and tempera grassa/Canvas",
+    "description": "30x20 inches, 2020-22",
     "featured": true,
     "featuredOrder": 3
   },
   "root-and-branch": {
+    "gallery": "paintings",
     "title": "Root and Branch",
-    "format": "Acrylics on canvas",
-    "description": "Inspired by the idea that we are harmed through relationship, and heal through relationship."
+    "format": "Acrylics/Canvas",
+    "description": "20x16 inches, 2020-22"
   },
   "in-their-arms": {
+    "gallery": "paintings",
     "title": "In Their Arms",
-    "format": "Oils on canvas",
+    "format": "Oils/Canvas",
     "wide": true,
     "featured": true,
     "featuredOrder": 1,
-    "description": "In December 2018 I travelled to Patagonia and spent a week hiking around El Chaltén, a small village in Argentina. I discovered glacial lakes held in the arms of mountains, and watched sunlight bounce off the sheer sides of Cerro Torre. The trip and the following months marked a dark time in my life. I painted this to heal; it worked, somewhat."
+    "description": "12x16 inches, 2019-20"
   },
   "web-of-being": {
+    "gallery": "paintings",
     "title": "Web of Being",
-    "format": "Acrylics on linen",
+    "format": "Acrylic/Canvas",
     "wide": true,
     "galleryFeatured": true,
-    "description": "Dedicated to nature's recyclers, mushrooms, and the interconnectedness of life and death, fallen trees and fallen people. Painted for the Mushroom Magic online exhibition run through the Vision Train (https://www.visiontrain.org/)"
+    "description": "16x24 inches, 2020"
   },
   "world-to-come": {
+    "gallery": "paintings",
     "title": "World to Come",
-    "format": "Oils on linen",
-    "description": "Begun around Beltane, as spring flowered into summer, and completed in winter, in rare London snow. Yep, that IS a sperm meteor shower. Yep, that fire IS where you think it is. I was (obviously) thinking about sex, and the connection of the ‘lower’ to the creative fires. It's partly inspired by The Star Tarot card, which is associated with hope, but other aspects are my own, and linked to other paintings. The spear on the ground and the scar on the chest both recall how I experienced grief (as though I’d been speared through), and a previous loss of power and life - but the spear is out, the wound is healing, and the figure is crouched, ready to stand. I had a lot of hope and energy when beginning this, and in winter it’s a reminder that times of life and heat will come again."
+    "format": "Oils/Canvas",
+    "description": "60x50cm, 2020-21"
   }
 }

@@ -16,7 +16,7 @@ data: descriptions
 </a>
 </article>
 <article class="gallery">
-{% for image in collections.gallery %}
+{% for image in collections.paintings %}
 {% if descriptions[image.name].galleryFeatured !== true %}
 <a class="gallery__link" href="/artwork/{{image.name}}">
 <figure class="gallery__figure">

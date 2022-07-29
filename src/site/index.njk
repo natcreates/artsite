@@ -5,14 +5,15 @@ data: descriptions
 <section>
 <article>
 <ul class="featured">
-{% for image in collections.gallery | getFeatured %}
+{% for image in collections.paintings | getFeatured %}
 <li><a href="/artwork/{{image.name}}"><img src="{{ image.path | relative | url }}" class="home-item__image artwork" /></a></li>
 {% endfor %}
 </ul>
 </article>
-    <a href="/gallery" class="button button--home">View full portfolio</a>
-<div class="container">
-</div>
+<article><h2>2022 Shows</h2</article>
+<p class="show show--done"><a class="show-link" href="https://www.outtograss.com/something-different-2022/">Something Different</a>, 13-16th May 2022</p>
+<p class="show"><a class="show-link" href="https://anthroposfestival.org/">Anthropos Festival</a>, 8-12th September 2022</p>
+<p class="show"><a class="show-link" href="https://www.lovejam.community/event-details/lovejam-campout-2022">Lovejam Campout</a>, 22-26th September 2022</p>
 </section>
 
 

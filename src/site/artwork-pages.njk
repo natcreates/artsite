@@ -1,7 +1,7 @@
 ---
 layout: layouts/standard.njk
 pagination:
-    data: collections.gallery
+    data: collections.paintings
     size: 1
     alias: image
     resolve: values
@@ -14,8 +14,8 @@ permalink: "artwork/{{ image.name | slug }}/"
 <img src="/images/gallery/{{image.name | slug }}@1x.jpg" class="artpage__image {% if descriptions[image.name].wide %} artpage__image--wide {% endif %}" />
 <figcaption>
 <h2>{{ descriptions[image.name].title }}</h2>
-<em>{{ descriptions[image.name].format }}</em>
-<p>{{ descriptions[image.name].description }}</p>
+<em class="artpage__format">{{ descriptions[image.name].format }}</em>
+<p class="artpage__year">{{ descriptions[image.name].description }}</p>
 </figcaption>
 </figure>
 <div class="artpage__links">

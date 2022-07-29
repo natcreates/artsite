@@ -58,17 +58,21 @@ h1, h2, h3 {
   font-family: 'Julius Sans One', sans-serif;
 }
 h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-top: 0.2em;
   margin-bottom: 0.2em;
   line-height: 1;
 
   @media (min-width: $mid) {
-    font-size: 1.8em;
+    font-size: 1.6em;
   };
   @media (min-width: $wide) {
-    font-size: 2.2em;
+    font-size: 1.8em;
   };
+}
+
+h2 {
+  margin-bottom: 1em;
 }
 
 h4 {
@@ -100,6 +104,11 @@ a {
 .nakedLink a:hover,
 .nakedLink a:focus {
   border-bottom-style:none;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -137,6 +146,18 @@ a {
 
 }
 
+
+.show-link {
+  font-weight: 600;
+}
+
+.show--done {
+  opacity: 0.8;
+}
+
+.show {
+  margin: 0;
+}
 
 code {
   font-size: 0.8em;
@@ -176,17 +197,19 @@ main {
 }
 
 header {
-  padding-top: 0.6em;
+  padding: 0.6em;
   background-color: black;
   border-bottom: 2px solid silver;
+  display: flex;
+  justify-content: space-between;
 }
 
 
 footer {
-  margin-top: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  border-top-width: 1px;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top-width: 2px;
   border-top-style: solid;
   border-top-color: mix($text-color, $accent-color, 10%);
   font-size: 0.7em;
@@ -355,10 +378,10 @@ button, .button {
   li {
     height: 480px;
     overflow: hidden;
-    flex: 0 0 20%;
+    flex: 1 1 auto;
 
 @media (max-width: $mid-2) {
-  flex: 0 0 25%;
+  flex: 1 1 auto;
 }
      @media (max-width: $mid) {
       flex: 0 0 33.33%;
@@ -601,7 +624,6 @@ img {
 }
 
 .artpage-wrapper {
-  height: 600px;
   position: relative;
   margin-bottom: 3em;
 }
@@ -616,7 +638,6 @@ img {
 
 @media (min-width: $mid) {
   margin: 2em 0;
-  flex-direction: row;
   padding: 0;
   justify-content: flex-start;
 }
@@ -632,6 +653,15 @@ img {
 
 .artpage__image--wide {
   max-width: 70%;
+}
+
+.artpage__format {
+  margin-bottom: 0;
+}
+
+.artpage__year {
+  display: block;
+  margin-top: 0;
 }
 
 .artpage__links {
@@ -652,7 +682,7 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 0 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,6 +694,6 @@ img {
 }
 
 .instagram__img {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }

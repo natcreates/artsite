@@ -1,8 +1,8 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const fg = require('fast-glob');
-const galleryImagePaths = fg.sync(['**/src/site/images/gallery/*']);
+const paintingImagePaths = fg.sync(['**/src/site/images/paintings/*']);
 const easelImagePaths = fg.sync(['**/src/site/images/easel/*']);
-let galleryImagesOutput = [];
+let paintingImagesOutput = [];
 let easelImagesOutput = [];
 
 module.exports = function(config) {
@@ -10,16 +10,16 @@ module.exports = function(config) {
   // Layout aliases can make templates more portable
   config.addLayoutAlias('default', 'layouts/base.njk');
 
-  for (let path of galleryImagePaths) {
-    const name = path.replace('src/site/images/gallery/', '').replace(/@\dx\..*/, '');
-    galleryImagesOutput.push({ path, name });
+  for (let path of paintingImagePaths) {
+    const name = path.replace('src/site/images/paintings/', '').replace(/@\dx\..*/, '');
+    paintingImagesOutput.push({ path, name });
   }
   for (let path of easelImagePaths) {
     const name = path.replace('src/site/images/easel/', '').replace(/\..*/, '');
     easelImagesOutput.push({ path, name });
   }
   // }
-  config.addCollection('gallery', () => galleryImagesOutput);
+  config.addCollection('paintings', () => paintingImagesOutput);
   config.addCollection('easel', () => easelImagesOutput);
 
   // Add some utility filters
