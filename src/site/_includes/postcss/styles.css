@@ -659,9 +659,6 @@ img {
 .artpage__image {
   max-height: 600px;
   width: auto;
-@media (min-width: $mid) {
-  margin-right: 2em;
-}
 }
 
 .artpage__image--wide {
