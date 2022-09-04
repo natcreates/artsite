@@ -62,6 +62,8 @@ h1 {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
   line-height: 1;
+  whitespace: nowrap;
+
 
   @media (min-width: $mid) {
     font-size: 1.6em;
@@ -275,6 +277,17 @@ button, .button {
 .button--home {
   max-width: 300px;
   margin: 1em auto;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
 }
 
 .strapline {
