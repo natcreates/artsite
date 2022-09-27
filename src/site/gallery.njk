@@ -23,9 +23,6 @@ data: descriptions
 <div class="gallery__wrapper">
 <img src="{{ image.path | relative | url }}" class="artwork gallery__image {% if descriptions[image.name].wide %} gallery__image--wide {% endif %}" />
 </div>
-<figcaption>
-<h4 class="gallery__name">{{ descriptions[image.name].title }}</h4>
-</figcaption>
 </figure>
 </a>
 {% endif %}

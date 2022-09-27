@@ -31,11 +31,19 @@
     "format": "Oils and tempera grassa/Canvas",
     "description": "24x16 inches, WIP."
   },
-  "reach": {
-    "title": "Reach",
+  "revelation": {
+    "title": "Revelation",
     "gallery": "paintings",
     "format": "Oils on paper",
-    "description": "A3, 2019"
+    "description": "A3, 2019",
+    "yearFinished": "2020"
+  },
+  "awaken": {
+    "title": "Awaken",
+    "gallery": "paintings",
+    "format": "Acrylics on canvas board",
+    "description": "14x16 inches, 2021",
+    "yearFinished": "2021"
   },
   "milky-boa": {
     "title": "Milky Boa",
@@ -55,7 +63,8 @@
     "title": "Visitation",
     "gallery": "paintings",
     "format": "Oils/Paper",
-    "description": "A3, 2020"
+    "description": "A3, 2020",
+    "yearFinished": "2020"
   },
   "midnight": {
     "title": "Midnight",
@@ -63,7 +72,8 @@
     "format": "Oils/Paper",
     "description": "A3, 2020",
     "featured": true,
-    "featuredOrder": 2
+    "featuredOrder": 2,
+    "yearFinished": "2020"
   },
   "here-be-dragons": {
     "gallery": "drawings",
@@ -101,14 +111,17 @@
     "format": "Oils and tempera grassa/Canvas",
     "description": "30x20 inches, 2019-WIP",
     "featured": true,
-    "featuredOrder": 5
+    "featuredOrder": 5,
+    "yearFinished": "2022"
+
   },
   "ponyland": {
     "title": "Ponyland",
     "gallery": "paintings",
     "format": "Acrylics/Large board",
     "wide": true,
-    "description": "Wall sized, 2015"
+    "description": "Wall sized, 2015",
+    "yearFinished": "2015"
   },
   "renaissance": {
     "title": "Renaissance",
@@ -116,13 +129,15 @@
     "format": "Oils and tempera grassa/Canvas",
     "description": "30x20 inches, 2020-22",
     "featured": true,
-    "featuredOrder": 3
+    "featuredOrder": 3,
+    "yearFinished": "2021"
   },
   "root-and-branch": {
     "gallery": "paintings",
     "title": "Root and Branch",
     "format": "Acrylics/Canvas",
-    "description": "20x16 inches, 2020-22"
+    "description": "20x16 inches, 2020-22",
+    "yearFinished": "2022"
   },
   "in-their-arms": {
     "gallery": "paintings",
@@ -131,7 +146,8 @@
     "wide": true,
     "featured": true,
     "featuredOrder": 1,
-    "description": "12x16 inches, 2019-20"
+    "description": "12x16 inches, 2019-20",
+    "yearFinished": "2020"
   },
   "web-of-being": {
     "gallery": "paintings",
@@ -139,12 +155,14 @@
     "format": "Acrylic/Canvas",
     "wide": true,
     "galleryFeatured": true,
-    "description": "16x24 inches, 2020"
+    "description": "16x24 inches, 2020",
+    "yearFinished": "2021"
   },
   "world-to-come": {
     "gallery": "paintings",
     "title": "World to Come",
     "format": "Oils/Canvas",
-    "description": "60x50cm, 2020-21"
+    "description": "60x50cm, 2020-21",
+    "yearFinished": "2021"
   }
 }

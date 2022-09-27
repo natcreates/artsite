@@ -30,7 +30,7 @@ body {
   line-height: 1.8;
   min-height: 100vh;
   background:  $page-color;
-  background: linear-gradient(320deg, $page-color 0%, $accent-color 100%);
+  background-color: #010203;
 
   @media (min-width: $narrow) {
     font-size: 18px;
