@@ -45,6 +45,13 @@
     "description": "14x16 inches, 2021",
     "yearFinished": "2021"
   },
+  "omnibeat": {
+    "title": "Omnibeat",
+    "gallery": "paintings",
+    "format": "Acrylics on canvas board",
+    "description": "12x14 inches, 2022",
+    "yearFinished": "2022"
+  },
   "milky-boa": {
     "title": "Milky Boa",
     "gallery": "paintings",
@@ -146,6 +153,7 @@
     "wide": true,
     "featured": true,
     "featuredOrder": 1,
+    "galleryFeatured": true,
     "description": "12x16 inches, 2019-20",
     "yearFinished": "2020"
   },
@@ -154,7 +162,7 @@
     "title": "Web of Being",
     "format": "Acrylic/Canvas",
     "wide": true,
-    "galleryFeatured": true,
+    "galleryFeatured": false,
     "description": "16x24 inches, 2020",
     "yearFinished": "2021"
   },

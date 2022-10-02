@@ -40,7 +40,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 980px;
+  width: 70%;
   position: relative;
 
   @media (max-width: $mid-2) {
@@ -304,7 +304,6 @@ button, .button {
   display: grid;
   grid-template-columns: repeat(1, 100%);
   padding: 1em;
-  padding-top: 0;
 
   @media (min-width: $mid) {
     grid-template-columns: repeat(3, 33.3%);
@@ -328,7 +327,7 @@ button, .button {
   padding: 1em;
 
 @media (min-width: $mid) {
-  width: 80%;
+  width: 500px;
 }
 }
 
@@ -342,6 +341,10 @@ button, .button {
   &:hover, &:focus {
     background-color: rgba(100,100,100, 0.5);
   }
+}
+
+.gallery__link--wide {
+  grid-column: span 2;
 }
 
 .gallery__wrapper {
@@ -363,7 +366,7 @@ button, .button {
 
 .gallery__image--wide {
   object-fit: cover;
-  max-width: 250%;
+  max-width: 100%%;
 }
 
 .gallery__name {
@@ -581,7 +584,13 @@ img {
   border-radius: 50%;
   max-width: 300px;
   max-height: 300px;
-  margin-right: 20px;
+  margin-right: 1.5em;
+}
+
+.anthropos {
+  width: 360px;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .about {

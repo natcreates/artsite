@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const fg = require('fast-glob');
 const paintingImagePaths = fg.sync(['**/src/site/images/paintings/*']);
 const easelImagePaths = fg.sync(['**/src/site/images/easel/*']);
+const sortBy = require('lodash/sortBy');
 let paintingImagesOutput = [];
 let easelImagesOutput = [];
 
@@ -9,9 +10,12 @@ module.exports = function(config) {
 
   // Layout aliases can make templates more portable
   config.addLayoutAlias('default', 'layouts/base.njk');
+  const sortedImagePaths = sortBy(paintingImagePaths);
+  console.log('sortedImagePaths', sortedImagePaths);
 
-  for (let path of paintingImagePaths) {
-    const name = path.replace('src/site/images/paintings/', '').replace(/@\dx\..*/, '');
+  for (let path of sortedImagePaths) {
+    const name = path.replace('src/site/images/paintings/', '').replace(/@\dx\..*/, '').replace(/\d+-/, '');
+    console.log('name', name);
     paintingImagesOutput.push({ path, name });
   }
   for (let path of easelImagePaths) {
@@ -19,7 +23,7 @@ module.exports = function(config) {
     easelImagesOutput.push({ path, name });
   }
   // }
-  config.addCollection('paintings', () => paintingImagesOutput);
+  config.addCollection('paintings', () => paintingImagesOutput.reverse());
   config.addCollection('easel', () => easelImagesOutput);
 
   // Add some utility filters

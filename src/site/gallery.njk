@@ -3,14 +3,13 @@ layout: layouts/standard.njk
 data: descriptions
 ---
 <article class="gallery-featured">
-<a class="gallery__link" href="/artwork/web-of-being">
+<a class="gallery__link" href="/artwork/in-their-arms">
 <figure class="gallery__figure gallery__figure--featured">
 <div class="gallery__wrapper--featured">
-<img src="{{ '/images/paintings/web-of-being@1x.jpg' | url }}" class="artwork gallery__image" />
+<img src="{{ '/images/paintings/in-their-arms@1x.jpg' | url }}" class="artwork gallery__image" />
 </div>
 <figcaption>
-<h4 class="gallery__name">Featured: Web of Being</h4>
-<em class="gallery__format">Acrylics on linen</em>
+<h4 class="gallery__name">Featured: In their arms</h4>
 </figcaption>
 </figure>
 </a>
@@ -18,7 +17,7 @@ data: descriptions
 <article class="gallery">
 {% for image in collections.paintings %}
 {% if descriptions[image.name].galleryFeatured !== true %}
-<a class="gallery__link" href="/artwork/{{image.name}}">
+<a class="gallery__link {% if descriptions[image.name].wide %} gallery__link--wide {% endif %}" href="/artwork/{{image.name}}">
 <figure class="gallery__figure">
 <div class="gallery__wrapper">
 <img src="{{ image.path | relative | url }}" class="artwork gallery__image {% if descriptions[image.name].wide %} gallery__image--wide {% endif %}" />
