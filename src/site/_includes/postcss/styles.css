@@ -321,13 +321,19 @@ button, .button {
   margin: 0.5em;
 }
 
-.gallery__figure--featured {
+.gallery__figure--featured, .gallery__figure--portrait-featured {
   width: 100%;
   margin: 0 auto;
   padding: 1em;
 
 @media (min-width: $mid) {
   width: 500px;
+}
+}
+
+.gallery__figure--portrait-featured {
+@media (min-width: $mid) {
+  width: 400px;
 }
 }
 
@@ -588,7 +594,7 @@ img {
 }
 
 .anthropos {
-  width: 360px;
+  width: 400px;
   margin-left: 1.5em;
   margin-bottom: 1.5em;
 }

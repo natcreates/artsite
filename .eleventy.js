@@ -1,9 +1,11 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const fg = require('fast-glob');
 const paintingImagePaths = fg.sync(['**/src/site/images/paintings/*']);
+const portraitImagePaths = fg.sync(['**/src/site/images/portraits/*']);
 const easelImagePaths = fg.sync(['**/src/site/images/easel/*']);
 const sortBy = require('lodash/sortBy');
 let paintingImagesOutput = [];
+let portraitImagesOutput = [];
 let easelImagesOutput = [];
 
 module.exports = function(config) {
@@ -11,11 +13,17 @@ module.exports = function(config) {
   // Layout aliases can make templates more portable
   config.addLayoutAlias('default', 'layouts/base.njk');
   const sortedImagePaths = sortBy(paintingImagePaths);
+  const sortedPortraitPaths = sortBy(portraitImagePaths);
 
   for (let path of sortedImagePaths) {
     const link = path.replace('src/site/images/paintings/', '').replace(/@\dx\..*/, '');
     const name = link.replace(/\d+-/, '');
     paintingImagesOutput.push({ path, name, link });
+  }
+  for (let path of sortedPortraitPaths) {
+    const link = path.replace('src/site/images/portraits/', '').replace(/@\dx\..*/, '');
+    const name = link.replace(/\d+-/, '');
+    portraitImagesOutput.push({ path, name, link });
   }
   for (let path of easelImagePaths) {
     const name = path.replace('src/site/images/easel/', '').replace(/\..*/, '');
@@ -23,6 +31,7 @@ module.exports = function(config) {
   }
   // }
   config.addCollection('paintings', () => paintingImagesOutput.reverse());
+  config.addCollection('portraits', () => portraitImagesOutput.reverse());
   config.addCollection('easel', () => easelImagesOutput);
 
   // Add some utility filters

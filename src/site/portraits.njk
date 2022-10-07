@@ -1,0 +1,17 @@
+---
+layout: layouts/standard.njk
+---
+<article class="gallery">
+{% for image in collections.portraits %}
+<figure class="gallery__figure">
+<div class="gallery__wrapper">
+<img src="{{ image.path | relative | url }}" class="artwork gallery__image" />
+</div>
+</figure>
+{% endfor %}
+</article>
+
+
+
+
+
