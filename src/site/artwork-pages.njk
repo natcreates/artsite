@@ -11,7 +11,7 @@ permalink: "artwork/{{ image.name | slug }}/"
 ---
 <article class="artpage-wrapper">
 <figure class="artpage">
-<img src="/images/paintings/{{image.name | slug }}@1x.jpg" class="artpage__image {% if descriptions[image.name].wide %} artpage__image--wide {% endif %}" />
+<img src="/images/paintings/{{image.link | slug }}@1x.jpg" class="artpage__image {% if descriptions[image.name].wide %} artpage__image--wide {% endif %}" />
 <figcaption>
 <h2>{{ descriptions[image.name].title }}</h2>
 <em class="artpage__format">{{ descriptions[image.name].format }}</em>

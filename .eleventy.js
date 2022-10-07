@@ -11,12 +11,11 @@ module.exports = function(config) {
   // Layout aliases can make templates more portable
   config.addLayoutAlias('default', 'layouts/base.njk');
   const sortedImagePaths = sortBy(paintingImagePaths);
-  console.log('sortedImagePaths', sortedImagePaths);
 
   for (let path of sortedImagePaths) {
-    const name = path.replace('src/site/images/paintings/', '').replace(/@\dx\..*/, '').replace(/\d+-/, '');
-    console.log('name', name);
-    paintingImagesOutput.push({ path, name });
+    const link = path.replace('src/site/images/paintings/', '').replace(/@\dx\..*/, '');
+    const name = link.replace(/\d+-/, '');
+    paintingImagesOutput.push({ path, name, link });
   }
   for (let path of easelImagePaths) {
     const name = path.replace('src/site/images/easel/', '').replace(/\..*/, '');
