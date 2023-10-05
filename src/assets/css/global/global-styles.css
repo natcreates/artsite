@@ -5,12 +5,18 @@
   project: https://cube.fyi/css.html
 */
 body {
-  color: var(--color-dark);
-  background: var(--color-light);
+  color: var(--color-light);
+  background: var(--color-dark);
   font-size: var(--size-step-1);
   font-family: var(--font-base);
-  line-height: 1.4;
+  line-height: 1.8;
   letter-spacing: var(--tracking);
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    letter-spacing: initial;
+  }
 }
 
 /* Base typesetting */
@@ -19,32 +25,44 @@ h2,
 h3 {
   line-height: 1;
   letter-spacing: var(--tracking-s);
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
 }
 
 h1 {
-  font-size: var(--size-step-5);
+  font-size: var(--size-step-3);
 }
 
 h2 {
-  font-size: var(--size-step-4);
+  font-size: var(--size-step-2);
+  margin-bottom: var(--space-s-m);
 }
 
 h3 {
-  font-size: var(--size-step-3);
+  font-size: var(--size-step-2);
 }
 
 /* Set line lengths */
 p,
 li,
 blockquote:not([class]) {
-  max-inline-size: 50ch;
+  max-inline-size: 75ch;
 }
 
-h1,
-h2,
-h3 {
-  max-inline-size: 20ch;
+/*h1,*/
+/*h2,*/
+/*h3 {*/
+/*  max-inline-size: 20ch;*/
+/*}*/
+
+h2 {
+  color: transparent;
+  background: conic-gradient(
+          #ec91e2,
+          #ff8753,
+          var(--color-primary)
+  );
+  background-size: 50%;
+  background-clip: text;
 }
 
 blockquote {
@@ -96,7 +114,7 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
+article [href^='http']:not([href*='nataliedixonart.com'])::after {
   display: inline-block;
   inline-size: 1em;
   block-size: 1em;

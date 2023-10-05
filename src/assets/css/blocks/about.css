@@ -1,0 +1,41 @@
+.about img {
+    float: right;
+    max-inline-size: 400px;
+    margin-top: var(--space-m);
+    margin-left: var(--space-m);
+    margin-bottom: var(--space-m);
+    border-radius:0 !important;
+}
+
+.about p:first-of-type img {
+    max-inline-size: 300px;
+    border-radius: 50% !important;
+    height: 400px;
+    width: 400px;
+    block-size: auto;
+    float: left;
+    margin-left: 0;
+    margin-right: var(--space-m);
+    margin-bottom: var(--space-l);
+}
+
+.about h3 {
+    text-align: center;
+    max-inline-size: 70ch;
+}
+
+.about ul {
+    list-style: none;
+    text-align: center;
+}
+
+.about li {
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 600px) {
+    .about p:first-of-type img {
+        width: 100%;
+        max-inline-size: initial;
+    }
+}

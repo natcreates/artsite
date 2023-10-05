@@ -1,0 +1,73 @@
+
+.artpage-wrapper {
+    position: relative;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.artpage {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4rem 1rem;
+    height: 100%;
+    text-align: center;
+    gap: var(--space-s);
+}
+
+.artpage figcaption {
+    padding: var(--space-xs-s);
+}
+
+.artpage h2 {
+    margin-top: var(--space-s-m);
+    margin-bottom: var(--space-s);
+}
+
+.artpage__image {
+    max-height: 85vh;
+    width: auto;
+}
+
+
+.artpage__image--wide {
+    max-width: 70%;
+}
+
+.artpage__format {
+    margin-bottom: 0;
+}
+
+.artpage__year {
+    display: block;
+    margin-top: 0;
+}
+
+.artpage__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.artpage__links--no-next {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+    .artpage {
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        height: 75vh;
+    }
+
+    .artpage__image--wide {
+        max-width: 100vw;
+    }
+
+    .artpage__links {
+        justify-content: space-around;
+    }
+}

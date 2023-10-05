@@ -1,30 +1,24 @@
 module.exports = {
   top: [
     {
+      text: 'Paintings',
+      url: '/gallery/'
+    },
+    {
+      text: 'Portraits',
+      url: '/portraits/'
+    },
+    {
       text: 'About',
       url: '/about/'
     },
     {
-      text: 'Get started',
-      url: '/get-started/'
+      text: 'Contact',
+      url: '/contact/'
     },
     {
-      text: 'Built with',
-      url: '/built-with/'
-    },
-    {
-      text: 'Blog',
-      url: '/blog/'
+      text: 'Shop',
+      url: 'https://www.etsy.com/uk/shop/NatalieDixonArt'
     }
   ],
-  bottom: [
-    {
-      text: 'Imprint',
-      url: '/imprint/'
-    },
-    {
-      text: 'Privacy',
-      url: '/privacy/'
-    }
-  ]
 };

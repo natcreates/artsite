@@ -1,0 +1,25 @@
+---
+layout: base
+pagination:
+    data: collections.paintings
+    size: 1
+    alias: image
+    resolve: values
+    before: (data) => data.filter((item) => !item.easel)
+
+permalink: "artwork/{{ image.name | slug }}/"
+---
+<article class="artpage-wrapper">
+<figure class="artpage">
+<img src="/assets/images/paintings/{{image.link | slug }}@1x.jpg" class="artpage__image {% if descriptions[image.name].wide %} artpage__image--wide {% endif %}" />
+<figcaption>
+<h2>{{ descriptions[image.name].title }}</h2>
+<em class="artpage__format">{{ descriptions[image.name].format }}</em>
+<p class="artpage__year">{{ descriptions[image.name].description }}</p>
+</figcaption>
+</figure>
+<div class="artpage__links">
+{% if pagination.previousPageLink %}<a href="{{pagination.previousPageLink}}">&#8592; Previous</a>{% else %}<a href="{{pagination.href.last}}">&#8592; Previous</a>{% endif %}{% if pagination.nextPageLink %}<a href="{{pagination.nextPageLink}}">Next &#8594;</a>{% else %}<a href="{{pagination.href.first}}">Next &#8594;</a>{% endif %}
+</div>
+</article>
+

@@ -5,8 +5,9 @@ const markdownLib = require('../plugins/markdown');
 const site = require('../../src/_data/meta');
 const {throwIfNotType} = require('../utils');
 const md = require('markdown-it')();
+const descriptions = require('../../src/_data/descriptions');
 
-/** Returns the first `limit` elements of the the given array. */
+/** Returns the first `limit` elements of the given array. */
 const limit = (array, limit) => {
   if (limit < 0) {
     throw new Error(`Negative limits are not allowed: ${limit}.`);
@@ -102,7 +103,7 @@ const mdInline = (content, opts) => {
 // source: https://github.com/bnijenhuis/bnijenhuis-nl/blob/main/.eleventy.js
 const splitlines = (input, maxCharLength) => {
   const parts = input.split(' ');
-  const lines = parts.reduce(function (acc, cur) {
+  const lines = parts.reduce(function(acc, cur) {
     if (!acc.length) {
       return [cur];
     }
@@ -121,6 +122,18 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
+const getFeatured = (images) =>
+  images.filter((image) => descriptions[image.name].featured).sort((image1, image2) => {
+    if (descriptions[image1.name].featuredOrder < descriptions[image2.name].featuredOrder) {
+      return -1;
+    }
+    if (descriptions[image1.name].featuredOrder > descriptions[image2.name].featuredOrder) {
+      return 1;
+    }
+    return 0;
+  });
+
+
 module.exports = {
   limit,
   toHtml,
@@ -132,5 +145,6 @@ module.exports = {
   minifyCss,
   minifyJs,
   mdInline,
-  splitlines
+  splitlines,
+  getFeatured
 };

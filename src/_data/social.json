@@ -1,22 +1,12 @@
 [
   {
-    "platform": "github",
-    "url": "https://github.com/madrilene/eleventy-excellent",
-    "icon": "github.svg"
+    "platform": "instagram",
+    "url": "https://instagram.com/nataliedixon_art",
+    "icon": "instagram.svg"
   },
   {
-    "platform": "mastodon",
-    "url": "https://front-end.social/@lene",
-    "icon": "mastodon.svg"
-  },
-  {
-    "platform": "ko-fi",
-    "url": "https://ko-fi.com/lenesaile",
-    "icon": "kofi.svg"
-  },
-  {
-    "platform": "rss",
-    "url": "/feed.xml",
-    "icon": "rss.svg"
+    "platform": "facebook",
+    "url": "https://wwww.facebook.com/NatalieDixonArt",
+    "icon": "facebook.svg"
   }
 ]

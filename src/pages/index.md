@@ -1,17 +1,15 @@
 ---
 permalink: /index.html
-title: ' Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: 'Home'
+description: 'Homepage of visual artist Natalie Dixon'
 layout: 'home'
 blog:
   title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
 ---
 
-## An Eleventy starter
+## Upcoming Shows
 
-This (opiniated) [Eleventy](https://www.11ty.dev/) starter is based on [Andy Bell's](https://mastodon.social/@andy@bell.bz) talk 'Be the browser’s mentor, not its micromanager' and it's companion website buildexcellentwebsit.es.
+[Magik Carpet Collective](https://dandelion.events/e/e98qe) - 4th-11th October 2023
 
-In his words, it's about hinting the browser rather than micromanaging it, using progressive enhancement, CSS layout, fluid type & spacing, as well as modern CSS features.
+[![Magik Carpet Collective](/assets/images/mcc-frome.jpeg "Magik Carpet Collective exhibition in Frome")](https://dandelion.events/e/e98qe)
 
-This way we can shape frontends that look good to everyone, regardless of device, connection speed or context.

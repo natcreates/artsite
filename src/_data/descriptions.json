@@ -1,0 +1,127 @@
+{
+  "fall-rise": {
+    "gallery": "paintings",
+    "title": "Fall and Rise",
+    "format": "Oils and tempera grassa/Canvas",
+    "description": "24x16 inches, WIP."
+  },
+  "revelation": {
+    "title": "Revelation",
+    "gallery": "paintings",
+    "format": "Oils on paper",
+    "description": "A3, 2019",
+    "yearFinished": "2020"
+  },
+  "awaken": {
+    "title": "Awaken",
+    "gallery": "paintings",
+    "format": "Acrylics on canvas board",
+    "description": "14x16 inches, 2021",
+    "yearFinished": "2021"
+  },
+  "omnibeat": {
+    "title": "Omnibeat",
+    "gallery": "paintings",
+    "format": "Acrylics on canvas board",
+    "description": "12x14 inches, 2022",
+    "yearFinished": "2022"
+  },
+  "milky-boa": {
+    "title": "Milky Boa",
+    "gallery": "paintings",
+    "format": "Oils/Canvas",
+    "description": "2020-",
+    "easel": true
+  },
+  "self-portrait": {
+    "title": "Self-Portrait",
+    "gallery": "paintings",
+    "format": "Oils on paper",
+    "description": "Begun during an online workshop run by the legendary visionary artist, Amanda Sage.",
+    "easel": true
+  },
+  "visitation": {
+    "title": "Visitation",
+    "gallery": "paintings",
+    "format": "Oils/Paper",
+    "description": "A3, 2020",
+    "yearFinished": "2020"
+  },
+  "midnight": {
+    "title": "Midnight",
+    "gallery": "paintings",
+    "format": "Oils/Paper",
+    "description": "A3, 2020",
+    "featured": true,
+    "featuredOrder": 2,
+    "yearFinished": "2020"
+  },
+  "albedo": {
+    "title": "Albedo",
+    "gallery": "paintings",
+    "format": "Oils and tempera grassa/Canvas",
+    "description": "30x20 inches, 2019-23",
+    "featured": true,
+    "featuredOrder": 5,
+    "yearFinished": "2023"
+
+  },
+  "ponyland": {
+    "title": "Ponyland",
+    "gallery": "paintings",
+    "format": "Acrylics/Large board",
+    "wide": true,
+    "description": "Wall sized, 2015",
+    "yearFinished": "2015"
+  },
+  "renaissance": {
+    "title": "Renaissance",
+    "gallery": "paintings",
+    "format": "Oils and tempera grassa/Canvas",
+    "description": "30x20 inches, 2020-22",
+    "featured": true,
+    "featuredOrder": 3,
+    "yearFinished": "2021"
+  },
+  "root-and-branch": {
+    "gallery": "paintings",
+    "title": "Root and Branch",
+    "format": "Acrylics/Canvas",
+    "description": "20x16 inches, 2020-22",
+    "yearFinished": "2022"
+  },
+  "emerge": {
+    "gallery": "paintings",
+    "title": "Emerge",
+    "format": "Oils/Canvas",
+    "description": "20x16 inches, 2023",
+    "yearFinished": "2023"
+  },
+  "in-their-arms": {
+    "gallery": "paintings",
+    "title": "In Their Arms",
+    "format": "Oils/Canvas",
+    "wide": true,
+    "featured": true,
+    "featuredOrder": 1,
+    "galleryFeatured": true,
+    "description": "12x16 inches, 2019-20",
+    "yearFinished": "2020"
+  },
+  "web-of-being": {
+    "gallery": "paintings",
+    "title": "Web of Being",
+    "format": "Acrylic/Canvas",
+    "wide": true,
+    "galleryFeatured": false,
+    "description": "16x24 inches, 2020",
+    "yearFinished": "2021"
+  },
+  "world-to-come": {
+    "gallery": "paintings",
+    "title": "World to Come",
+    "format": "Oils/Canvas",
+    "description": "60x50cm, 2020-21",
+    "yearFinished": "2021"
+  }
+}

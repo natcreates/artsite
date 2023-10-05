@@ -1,6 +1,6 @@
 .prose {
   --flow-space: var(--space-m-l);
-  --wrapper-max-width: 55rem;
+  --wrapper-max-width: 60rem;
 }
 
 .prose :is(h2, h3, h4) + * {

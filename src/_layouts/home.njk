@@ -1,15 +1,15 @@
 ---
 layout: base
+data: descriptions
 ---
 
-<header class="section spot-color-primary">
-  <div class="section__inner">
-    <div class="wrapper flow region">
-      <h1 class="text-center">{{ title }}</h1>
-    </div>
-  </div>
-  {% include 'svg/divider-waves.svg' %}
-</header>
+<ul class="featured">
+  <li><a href="/artwork/in-their-arms/index.html"><img src="/assets/images/paintings/05-in-their-arms@1x.jpg" class="home-item__image artwork" /></a></li>
+  <li><a href="/portraits"><img src="/assets/images/portraits/05-midnight@1x.jpg" class="home-item__image artwork" /></a></li>
+  <li><a href="/artwork/renaissance/index.html"><img src="/assets/images/paintings/11-renaissance@1x.jpg" class="home-item__image artwork" /></a></li>
+  <li><a href="/artwork/albedo/index.html"><img src="/assets/images/paintings/04-albedo@1x.jpg" class="home-item__image artwork" /></a></li>
+</ul>
+
 
 <article class="region">
   <div class="wrapper flow prose">
@@ -17,27 +17,3 @@ layout: base
   </div>
 </article>
 
-<article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose">
-    <h2>{{ blog.title }}</h2>
-    <!-- blog intro text is optional. -->
-    {% if blog.intro %}
-    <p>{{ blog.intro }}</p>
-    {% endif %}
-  </div>
-  <!-- TODO: duplicate of partials/blog.njk -->
-
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist.slice(0, 4) %}
-
-    <li class="card flow overflow-hidden">
-      <h3>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h3>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
-  </ul>
-</article>

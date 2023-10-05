@@ -10,7 +10,7 @@
 // JSDoc comment: Hint VS Code for eleventyConfig autocompletion. © Henry Desroches - https://gist.github.com/xdesro/69583b25d281d055cd12b144381123bf
 
 /**
- *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
+ *  @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig
  */
 
 // get package.json
@@ -39,7 +39,7 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const {getAllPosts} = require('./config/collections/index.js');
+const {getAllPosts, getPaintings} = require('./config/collections/index.js');
 
 // module import events
 const {svgToJpeg} = require('./config/events/index.js');
@@ -53,6 +53,7 @@ const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
+const {getFeatured} = require('./config/filters');
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -65,6 +66,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('home', 'home.njk');
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
+  eleventyConfig.addLayoutAlias('gallery', 'gallery.njk');
+  eleventyConfig.addLayoutAlias('portraits', 'portraits.njk');
+  eleventyConfig.addLayoutAlias('artwork-pages', 'artwork-pages.njk');
 
   // 	---------------------  Custom filters -----------------------
   eleventyConfig.addFilter('limit', limit);
@@ -85,6 +89,12 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
+  eleventyConfig.addFilter('getFeatured', getFeatured);
+  eleventyConfig.addFilter(
+    "relative",
+    (page, root = "/") => page.replace('src', '')
+  );
+
 
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
@@ -102,6 +112,7 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
+  eleventyConfig.addCollection('paintings', getPaintings);
 
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);

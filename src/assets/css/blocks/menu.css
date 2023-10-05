@@ -5,7 +5,6 @@
   }
 
   nav.navbar ul {
-    --nav-list-background: transparent;
     --nav-list-layout: row;
     --nav-list-position: static;
     --nav-list-padding: 0;
@@ -31,11 +30,11 @@ nav.navbar {
 
 /* Remove default list styling and create layout for list */
 nav.navbar ul {
-  background: var(--nav-list-background, var(--color-light));
+  background-color: var(--color-dark);
   box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
   display: flex;
   flex-direction: var(--nav-list-layout, column);
-  gap: var(--space-s);
+  gap: var(--space-m);
   block-size: var(--nav-list-height, 100vh);
   list-style: none;
   margin: 0;
@@ -63,8 +62,10 @@ nav.navbar [aria-expanded='false'] + ul {
 
 /* Basic link styling */
 nav.navbar a {
-  --text-color: var(--color-dark);
+  --text-color: var(--color-light);
   color: var(--text-color);
+  font-family: var(--font-heading);
+  font-size: var(--size-step-1);
   padding: 0.1rem;
   text-decoration: none;
   display: block;
@@ -82,7 +83,7 @@ nav.navbar a:where(:hover, :focus) {
 /* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
   --border-color: var(--color-primary);
-  --text-color: var(--color-primary);
+  --text-color: var(--color-light);
 }
 
 /* Reset button styling */
@@ -93,7 +94,6 @@ nav.navbar button {
   position: relative;
   z-index: 2;
   cursor: pointer;
-  align-items: center;
   padding: var(--space-xs) 0;
 }
 

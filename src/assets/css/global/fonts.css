@@ -1,38 +1,26 @@
 @font-face {
-  font-family: Inter;
+  font-family: Lato;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local(''), url(/assets/fonts/lato-bold-webfont.woff2) format('woff2'),
+  url(/assets/fonts/lato-bold-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local(''), url(/assets/fonts/lato-light-webfont.woff2) format('woff2'),
+    url(/assets/fonts/lato-light-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: JuliusSansOne;
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-500.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-500.woff) format('woff');
-}
-
-@font-face {
-  font-family: Inter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-700.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-700.woff) format('woff');
-}
-
-@font-face {
-  font-family: Redhat;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local(''),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2'),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'RobotoMono';
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: local(''),
-    url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
-      format('woff2'),
-    url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  src: local(''), url(/assets/fonts/juliussansone/juliussansone-regular-webfont.woff2) format('woff2'),
+  url(/assets/fonts/juliussansone/juliussansone-regular-webfont.woff) format('woff');
 }
