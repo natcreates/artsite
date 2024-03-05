@@ -9,7 +9,7 @@ blog:
 
 ## Upcoming Shows
 
-[Magik Carpet Collective](https://dandelion.events/e/e98qe) - 4th-11th October 2023
+[Women's Art Exhibition for International Women's Day, Candid Art Gallery, London](https://www.candidartslondon.com/product/friday-8th-march-women-s-art-exhibition-6-10pm/255?cp=true&sa=false&sbp=false&q=false&category_id=4) - 8th March 2024 
 
-[![Magik Carpet Collective](/assets/images/mcc-frome.jpeg "Magik Carpet Collective exhibition in Frome")](https://dandelion.events/e/e98qe)
+[![Women's Art Exhibition](/assets/images/iwd.jpg "Women's Art Exhibition for International Women's Day")](https://www.candidartslondon.com/product/friday-8th-march-women-s-art-exhibition-6-10pm/255?cp=true&sa=false&sbp=false&q=false&category_id=4)
 

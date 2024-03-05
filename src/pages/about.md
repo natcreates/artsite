@@ -24,6 +24,7 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 
 ### Past shows
 
+- [Magik Carpet Collective exhibition](https://dandelion.events/e/e98qe) - 4th-11th October 2023
 - [Lovejam Campout](https://www.lovejam.community/campout-2023) - 7th-11th September 2023
 - [Noisily Festival](https://noisilyfestival.com) - 6th-9th July 2023
 - 8th Toronto Visionary Art Exhibition - Dec 2022
@@ -34,3 +35,4 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 - [Transition online exhibition](https://www.visiontrain.org/transition.html) - March 2021
 - [Mushroom Magic online exhibition](https://www.visiontrain.org/mushroommagic.html) - Aug 2020
 
+[![Magik Carpet Collective](/assets/images/mcc-frome.jpeg "Magik Carpet Collective exhibition in Frome")](https://dandelion.events/e/e98qe)
