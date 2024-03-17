@@ -24,6 +24,7 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 
 ### Past shows
 
+-[Women's Art Exhibition for International Women's Day, Candid Art Gallery, London](https://www.candidartslondon.com/product/friday-8th-march-women-s-art-exhibition-6-10pm/255?cp=true&sa=false&sbp=false&q=false&category_id=4) - 8th March 2024
 - [Magik Carpet Collective exhibition](https://dandelion.events/e/e98qe) - 4th-11th October 2023
 - [Lovejam Campout](https://www.lovejam.community/campout-2023) - 7th-11th September 2023
 - [Noisily Festival](https://noisilyfestival.com) - 6th-9th July 2023
@@ -34,5 +35,3 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 - [Into the Wild online exhibition](http://www1.theartistlounge.org/?tm=1&subid4=1684514047.0257260000) - May 2021
 - [Transition online exhibition](https://www.visiontrain.org/transition.html) - March 2021
 - [Mushroom Magic online exhibition](https://www.visiontrain.org/mushroommagic.html) - Aug 2020
-
-[![Magik Carpet Collective](/assets/images/mcc-frome.jpeg "Magik Carpet Collective exhibition in Frome")](https://dandelion.events/e/e98qe)

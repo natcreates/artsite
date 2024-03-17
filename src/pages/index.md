@@ -9,7 +9,7 @@ blog:
 
 ## Upcoming Shows
 
-[Women's Art Exhibition for International Women's Day, Candid Art Gallery, London](https://www.candidartslondon.com/product/friday-8th-march-women-s-art-exhibition-6-10pm/255?cp=true&sa=false&sbp=false&q=false&category_id=4) - 8th March 2024 
+[Spring Salon, Candid Art Gallery, London](https://www.candidartslondon.com/product/spring-salon-exhibition-22nd-24th-march-opening-21st-march-6-10pm/256?cp=true&sa=false&sbp=false&q=false&category_id=4) - 22nd-24th March 2024 
 
-[![Women's Art Exhibition](/assets/images/iwd.jpg "Women's Art Exhibition for International Women's Day")](https://www.candidartslondon.com/product/friday-8th-march-women-s-art-exhibition-6-10pm/255?cp=true&sa=false&sbp=false&q=false&category_id=4)
+[![Spring salon](/assets/images/springsalon.jpg "Spring salon")](https://www.candidartslondon.com/product/spring-salon-exhibition-22nd-24th-march-opening-21st-march-6-10pm/256?cp=true&sa=false&sbp=false&q=false&category_id=4)
 
