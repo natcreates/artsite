@@ -24,6 +24,7 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 
 ### Past shows
 
+- [Spring Salon, Candid Art Gallery, London](https://www.candidartslondon.com/product/spring-salon-exhibition-22nd-24th-march-opening-21st-march-6-10pm/256?cp=true&sa=false&sbp=false&q=false&category_id=4) - 22nd-24th March 2024 
 - [Women's Art Exhibition for International Women's Day, Candid Art Gallery, London](https://www.candidartslondon.com/product/friday-8th-march-women-s-art-exhibition-6-10pm/255?cp=true&sa=false&sbp=false&q=false&category_id=4) - 8th March 2024
 - [Magik Carpet Collective exhibition](https://dandelion.events/e/e98qe) - 4th-11th October 2023
 - [Lovejam Campout](https://www.lovejam.community/campout-2023) - 7th-11th September 2023
