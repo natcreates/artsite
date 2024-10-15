@@ -2,6 +2,10 @@
   padding: var(--space-s-m);
   background: var(--color-dark);
   color: var(--color-light);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .site-foot__inner {

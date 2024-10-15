@@ -24,6 +24,7 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 
 ### Past shows
 
+- [Noisily Festival 2024, Leicestershire](https://noisilyfestival.com/) - 11th-14th July 2024
 - [Spring Salon, Candid Art Gallery, London](https://www.candidartslondon.com/product/spring-salon-exhibition-22nd-24th-march-opening-21st-march-6-10pm/256?cp=true&sa=false&sbp=false&q=false&category_id=4) - 22nd-24th March 2024 
 - [Women's Art Exhibition for International Women's Day, Candid Art Gallery, London](https://www.candidartslondon.com/product/friday-8th-march-women-s-art-exhibition-6-10pm/255?cp=true&sa=false&sbp=false&q=false&category_id=4) - 8th March 2024
 - [Magik Carpet Collective exhibition](https://dandelion.events/e/e98qe) - 4th-11th October 2023
@@ -36,3 +37,7 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 - [Into the Wild online exhibition](http://www1.theartistlounge.org/?tm=1&subid4=1684514047.0257260000) - May 2021
 - [Transition online exhibition](https://www.visiontrain.org/transition.html) - March 2021
 - [Mushroom Magic online exhibition](https://www.visiontrain.org/mushroommagic.html) - Aug 2020
+
+
+
+

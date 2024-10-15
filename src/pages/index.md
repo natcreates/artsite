@@ -9,6 +9,7 @@ blog:
 
 ## Upcoming Shows
 
-[Noisily Festival 2024, Leicestershire](https://noisilyfestival.com/) - 11th-14th July 2024 
+Shows 2025 TBC!
+
 
 

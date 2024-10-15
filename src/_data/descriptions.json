@@ -110,7 +110,7 @@
     "wide": true,
     "featured": true,
     "featuredOrder": 1,
-    "galleryFeatured": true,
+    "galleryFeatured": false,
     "description": "12x16 inches, 2019-20",
     "yearFinished": "2020"
   },

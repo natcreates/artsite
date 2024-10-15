@@ -9,7 +9,7 @@
 .gallery {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    padding: 1rem;
+    padding: 2rem;
     margin: 0 auto;
 }
 
@@ -19,10 +19,10 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     .gallery {
         grid-template-columns: repeat(4, 25%);
-        max-width: 1500px;
+        max-width: 1400px;
     }
 }
 
