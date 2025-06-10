@@ -9,7 +9,5 @@ blog:
 
 ## Upcoming Shows
 
-Shows 2025 TBC!
-
-
-
+[Existence Festival](https://existancefestival.com/) – June 12th-16th
+[Soul Revolution Festival](https://soulrevolutionfestival.com/festival/) – 7th-11th August
