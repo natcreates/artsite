@@ -6,13 +6,13 @@ layout: about
 youtube: true
 ---
 
-![Natalie working on a painting](/assets/images/me.png "Title")
+![Natalie working on a painting](/assets/images/me.png 'Title')
 
 Natalie Dixon is a self-taught artist based in London, UK. Her childhood mainly involved drawing pictures and writing words next to them; not much has changed. An early urge to express and tell stories led to an English degree, opening imaginary worlds but suppressing her visual side. In 2019, however, a personal crisis revealed that some things are beyond words. An emotional landscape unfolded, and she began painting in earnest, drawing on a palette discovered in earlier travels: the breadth and beauty of nature, and the world of visionary and psychedelic art. After attending workshops run by artists Daniel Mirante and Amanda Sage, she began a life-long work of integration, mapping nature to emotion, soul to matter, and stories to the human form.
 
-Since 2020 her work has featured in several online exhibitions, including the [2021 Into the Wild]((http://www1.theartistlounge.org/?tm=1&subid4=1684514047.0257260000)) exhibition hosted by The Artist Lounge, in which her work ‘In their arms’ was a semi-finalist. She exhibits in person at festivals (Something Different, Lovejam Campout, Anthropos) , enjoying the opportunity for inspiration and direct connection. Working in oils and acrylic, she explores the link between the outer world and inner truths, and the mythic nature of individual transformation.
+Since 2020 her work has featured in several online exhibitions, including the [2021 Into the Wild](<(http://www1.theartistlounge.org/?tm=1&subid4=1684514047.0257260000)>) exhibition hosted by The Artist Lounge, in which her work ‘In their arms’ was a semi-finalist. She exhibits in person at festivals (Something Different, Lovejam Campout, Anthropos) , enjoying the opportunity for inspiration and direct connection. Working in oils and acrylic, she explores the link between the outer world and inner truths, and the mythic nature of individual transformation.
 
-![Display at Anthropos festival](/assets/images/anthropos.jpg "Display at Anthropos festival")
+![Display at Anthropos festival](/assets/images/anthropos.jpg 'Display at Anthropos festival')
 
 ## Artist statement
 
@@ -22,10 +22,17 @@ I also paint from a joy in the rhythm of the human body, and from a wonder at th
 
 The story I take my scenes from is told by nature: the eternal cycle of death and rebirth, loss and healing. Through tonal contrasts and flowing lines, I convey the motion ever-present in our hearts and in the world around us, and always the potential for change.
 
-### Past shows
+### Past events
 
+- [Portals to the Divine, 11th Toronto Visionary Art Exhibit, online](https://www.facebook.com/events/s/11th-toronto-visionary-art-exh/770966975974839) - 5th December 2025-15th January 2026
+- [Satanic Flea Market AntiChristmas Fayre, London](https://baphomart.com/satanic-flea-market/?srsltid=AfmBOoqNyZi04W5dNk9hwFbCfWlR_0ANrf-TQKmqlro9ruJYBZw242LN) - 14th December 2025
+- [Candid Christmas Exhibition, Candid Gallery, London](https://www.candidartslondon.com/up-coming-exhibitions) - 5th-21st December 2025
+- [Satanic Flea Market, London](https://baphomart.com/satanic-flea-market/?srsltid=AfmBOoqNyZi04W5dNk9hwFbCfWlR_0ANrf-TQKmqlro9ruJYBZw242LN) - 12th October 2025
+- [Something Different gathering](https://www.outtograss.com/events/) - 5th-7th September 2025
+- [Soul Revolution Festival](https://soulrevolutionfestival.com/festival/) – 7th-11th August 2025
+- [Existence Festival](https://existancefestival.com/) – June 12th-16th 2025
 - [Noisily Festival 2024, Leicestershire](https://noisilyfestival.com/) - 11th-14th July 2024
-- [Spring Salon, Candid Art Gallery, London](https://www.candidartslondon.com/product/spring-salon-exhibition-22nd-24th-march-opening-21st-march-6-10pm/256?cp=true&sa=false&sbp=false&q=false&category_id=4) - 22nd-24th March 2024 
+- [Spring Salon, Candid Art Gallery, London](https://www.candidartslondon.com/product/spring-salon-exhibition-22nd-24th-march-opening-21st-march-6-10pm/256?cp=true&sa=false&sbp=false&q=false&category_id=4) - 22nd-24th March 2024
 - [Women's Art Exhibition for International Women's Day, Candid Art Gallery, London](https://www.candidartslondon.com/product/friday-8th-march-women-s-art-exhibition-6-10pm/255?cp=true&sa=false&sbp=false&q=false&category_id=4) - 8th March 2024
 - [Magik Carpet Collective exhibition](https://dandelion.events/e/e98qe) - 4th-11th October 2023
 - [Lovejam Campout](https://www.lovejam.community/campout-2023) - 7th-11th September 2023
@@ -37,7 +44,3 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 - [Into the Wild online exhibition](http://www1.theartistlounge.org/?tm=1&subid4=1684514047.0257260000) - May 2021
 - [Transition online exhibition](https://www.visiontrain.org/transition.html) - March 2021
 - [Mushroom Magic online exhibition](https://www.visiontrain.org/mushroommagic.html) - Aug 2020
-
-
-
-
