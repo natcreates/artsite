@@ -5,21 +5,26 @@ pagination:
     size: 1
     alias: image
     resolve: values
+    addAllPagesToCollections: true
     before: (data) => data.filter((item) => !item.easel)
 
 permalink: "artwork/{{ image.name | slug }}/"
+
+eleventyComputed:
+  title: "{{ descriptions[image.name].title }}"
+  description: "{{ descriptions[image.name].title }}, a painting by Natalie Dixon. {{ descriptions[image.name].format }}, {{ descriptions[image.name].description }}"
 ---
+{% set painting = descriptions[image.name] %}
 <article class="artpage-wrapper">
 <figure class="artpage">
-<img src="/assets/images/paintings/{{image.link | slug }}@1x.jpg" class="artpage__image {% if descriptions[image.name].wide %} artpage__image--wide {% endif %}" />
+<img src="/assets/images/paintings/{{image.link | slug }}@1x.jpg" alt="{{ painting.alt | default(painting.title) }}" class="artpage__image {% if painting.wide %} artpage__image--wide {% endif %}" />
 <figcaption>
-<h2>{{ descriptions[image.name].title }}</h2>
-<em class="artpage__format">{{ descriptions[image.name].format }}</em>
-<p class="artpage__year">{{ descriptions[image.name].description }}</p>
+<h2>{{ painting.title }}</h2>
+<em class="artpage__format">{{ painting.format }}</em>
+<p class="artpage__year">{{ painting.description }}</p>
 </figcaption>
 </figure>
 <div class="artpage__links">
 {% if pagination.previousPageLink %}<a href="{{pagination.previousPageLink}}">&#8592; Previous</a>{% else %}<a href="{{pagination.href.last}}">&#8592; Previous</a>{% endif %}{% if pagination.nextPageLink %}<a href="{{pagination.nextPageLink}}">Next &#8594;</a>{% else %}<a href="{{pagination.href.first}}">Next &#8594;</a>{% endif %}
 </div>
 </article>
-

@@ -6,18 +6,14 @@ data: descriptions
 <article class="gallery">
 {% for image in collections.paintings %}
 {% if descriptions[image.name].galleryFeatured !== true %}
-<a class="gallery__link {% if descriptions[image.name].wide %} gallery__link--wide {% endif %}" href="/artwork/{{image.name}}">
+{% set painting = descriptions[image.name] %}
+<a class="gallery__link {% if painting.wide %} gallery__link--wide {% endif %}" href="/artwork/{{image.name}}">
 <figure class="gallery__figure">
 <div class="gallery__wrapper">
-<img src="{{ image.path | relative | url }}" class="artwork gallery__image {% if descriptions[image.name].wide %} gallery__image--wide {% endif %}" />
+<img src="{{ image.path | relative | url }}" alt="{{ painting.alt | default(painting.title) }}" class="artwork gallery__image {% if painting.wide %} gallery__image--wide {% endif %}" />
 </div>
 </figure>
 </a>
 {% endif %}
 {% endfor %}
 </article>
-
-
-
-
-

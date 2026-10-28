@@ -1,78 +1,56 @@
 {
-  "soulbreak": {
-    "gallery": "paintings",
-    "title": "Soulbreak",
-    "format": "Oils and tempera grassa/Canvas",
-    "description": "14x16 inches, 2024."
-  },
   "reverie": {
     "gallery": "paintings",
     "title": "Reverie",
     "format": "Oils/Canvas",
-    "description": "12x16 inches, 2024."
+    "description": "12x16 inches, 2024.",
+    "alt": "A dark-haired woman rests her head on her drawn-up knee, lit warmly against a near-black background, with a lit candle trailing smoke beside her."
   },
   "soulbreak": {
     "gallery": "paintings",
     "title": "Soulbreak",
     "format": "Oils/Canvas",
-    "description": "18x24 inches, 2024."
+    "description": "18x24 inches, 2024.",
+    "alt": "A figure arches backwards to lift a shaft of white light, surrounded by billowing clouds of fire and smoke, with a phoenix rising from flames below."
   },
   "samhain": {
     "gallery": "paintings",
     "title": "Samhain",
     "format": "Oils/Paper",
-    "description": "A3, 2024."
+    "description": "A3, 2024.",
+    "alt": "In deep reds, a face tips back with eyes closed beneath outstretched crow wings and a hanging ankh, with a spiral of petals below."
   },
   "revelation": {
     "title": "Revelation",
     "gallery": "paintings",
     "format": "Oils on paper",
     "description": "A3, 2019",
-    "yearFinished": "2020"
+    "yearFinished": "2020",
+    "alt": "A long-haired figure gazes upward, flanked by reaching hands: a shadowed skull on one side, a burning orange swirl on the other."
   },
   "awaken": {
     "title": "Awaken",
     "gallery": "paintings",
     "format": "Acrylics on canvas board",
     "description": "14x16 inches, 2021",
-    "yearFinished": "2021"
+    "yearFinished": "2021",
+    "alt": "A woman lifts her face to a blazing sun in a blue sky, magnolia and lily blooms opening around her shoulders out of the darkness below."
   },
   "omnibeat": {
     "title": "Omnibeat",
     "gallery": "paintings",
     "format": "Acrylics on canvas board",
     "description": "12x14 inches, 2022",
-    "yearFinished": "2022"
-  },
-  "milky-boa": {
-    "title": "Milky Boa",
-    "gallery": "paintings",
-    "format": "Oils/Canvas",
-    "description": "2020-",
-    "easel": true
-  },
-  "self-portrait": {
-    "title": "Self-Portrait",
-    "gallery": "paintings",
-    "format": "Oils on paper",
-    "description": "Begun during an online workshop run by the legendary visionary artist, Amanda Sage.",
-    "easel": true
+    "yearFinished": "2022",
+    "alt": "A pale figure with bare branches growing from her head reaches towards the sun, a full moon resting in her other hand against a red ground."
   },
   "visitation": {
     "title": "Visitation",
     "gallery": "paintings",
     "format": "Oils/Paper",
     "description": "A3, 2020",
-    "yearFinished": "2020"
-  },
-  "midnight": {
-    "title": "Midnight",
-    "gallery": "paintings",
-    "format": "Oils/Paper",
-    "description": "A3, 2020",
-    "featured": true,
-    "featuredOrder": 2,
-    "yearFinished": "2020"
+    "yearFinished": "2020",
+    "alt": "A short-haired person in round glasses and a red top looks out at the viewer, a glowing pink neon butterfly beside them and a green street scene behind."
   },
   "albedo": {
     "title": "Albedo",
@@ -81,8 +59,8 @@
     "description": "30x20 inches, 2019-23",
     "featured": true,
     "featuredOrder": 5,
-    "yearFinished": "2023"
-
+    "yearFinished": "2023",
+    "alt": "A silver-grey figure sits haloed in moonlight beneath a tree of serpentine branches, a golden phoenix perched facing her in the dark."
   },
   "ponyland": {
     "title": "Ponyland",
@@ -90,7 +68,8 @@
     "format": "Acrylics/Large board",
     "wide": true,
     "description": "Wall sized, 2015",
-    "yearFinished": "2015"
+    "yearFinished": "2015",
+    "alt": "A wide night scene of twisting trees around a glowing white lotus, with green horse-like spirits leaping through the branches."
   },
   "renaissance": {
     "title": "Renaissance",
@@ -99,21 +78,24 @@
     "description": "30x20 inches, 2020-22",
     "featured": true,
     "featuredOrder": 3,
-    "yearFinished": "2021"
+    "yearFinished": "2021",
+    "alt": "A figure stretches upward through swirling magenta and gold forms towards a descending dove, a peacock feather at the edge of the frame."
   },
   "root-and-branch": {
     "gallery": "paintings",
     "title": "Root and Branch",
     "format": "Acrylics/Canvas",
     "description": "20x16 inches, 2020-22",
-    "yearFinished": "2022"
+    "yearFinished": "2022",
+    "alt": "A seated woman's body becomes a tree, with small human figures curled among her roots and branches beneath a starlit sky."
   },
   "emerge": {
     "gallery": "paintings",
     "title": "Emerge",
     "format": "Oils/Canvas",
     "description": "20x16 inches, 2023",
-    "yearFinished": "2023"
+    "yearFinished": "2023",
+    "alt": "A blonde woman with her eyes closed tilts her face upward, a white butterfly at her brow, a daisy behind her ear and red butterflies circling behind."
   },
   "in-their-arms": {
     "gallery": "paintings",
@@ -124,7 +106,8 @@
     "featuredOrder": 1,
     "galleryFeatured": false,
     "description": "12x16 inches, 2019-20",
-    "yearFinished": "2020"
+    "yearFinished": "2020",
+    "alt": "A nude figure lies curled and sleeping among snow-capped mountain peaks at sunset, her body merging with the rock."
   },
   "web-of-being": {
     "gallery": "paintings",
@@ -133,13 +116,15 @@
     "wide": true,
     "galleryFeatured": false,
     "description": "16x24 inches, 2020",
-    "yearFinished": "2021"
+    "yearFinished": "2021",
+    "alt": "A face surfaces from a violet web of mycelium threads, with mushrooms and fungi growing out of the strands around it."
   },
   "world-to-come": {
     "gallery": "paintings",
     "title": "World to Come",
     "format": "Oils/Canvas",
     "description": "60x50cm, 2020-21",
-    "yearFinished": "2021"
+    "yearFinished": "2021",
+    "alt": "A woman crouches at a small fire in a forest clearing, looking up at a bright star and falling meteors in the night sky."
   }
 }
