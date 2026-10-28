@@ -1,5 +1,3 @@
-{% set assetHash = global.random() %}
-
 <!DOCTYPE html>
 <html lang="{{ meta.lang }}">
   <head>
@@ -18,19 +16,19 @@
       {% endif %}
     </title>
 
-    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
+    <link rel="stylesheet" href="/assets/css/global.css?{{ global.cssHash }}" />
 
     <!-- preloads -->
     <link
       rel="preload"
-      href="/assets/fonts/lato-light-webfont.woff2"
+      href="/assets/fonts/lato/lato-light-webfont.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="/assets/fonts/inter/lato-bold-webfont.woff2"
+      href="/assets/fonts/lato/lato-bold-webfont.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -54,7 +52,7 @@
     {% endif %}
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?{{ assetHash }}" defer></script>
+    <script type="module" src="/assets/scripts/app.js?{{ global.jsHash }}" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}

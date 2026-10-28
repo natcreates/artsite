@@ -3,8 +3,8 @@
   font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: local(''), url(/assets/fonts/lato-bold-webfont.woff2) format('woff2'),
-  url(/assets/fonts/lato-bold-webfont.woff) format('woff');
+  src: local(''), url(/assets/fonts/lato/lato-bold-webfont.woff2) format('woff2'),
+  url(/assets/fonts/lato/lato-bold-webfont.woff) format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-display: swap;
   font-weight: 300;
-  src: local(''), url(/assets/fonts/lato-light-webfont.woff2) format('woff2'),
-    url(/assets/fonts/lato-light-webfont.woff) format('woff');
+  src: local(''), url(/assets/fonts/lato/lato-light-webfont.woff2) format('woff2'),
+    url(/assets/fonts/lato/lato-light-webfont.woff) format('woff');
 }
 
 @font-face {
