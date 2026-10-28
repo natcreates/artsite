@@ -1,7 +1,7 @@
 ---
 title: Portraits
 permalink: /portraits/index.html
-description: Test
+description: 'Portrait paintings and commissions by Natalie Dixon.'
 layout: portraits
 youtube: true
 data: descriptions

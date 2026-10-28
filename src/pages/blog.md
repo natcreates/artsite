@@ -1,6 +1,6 @@
 ---
 title: Blog
-description: 'All blog posts can be found here'
+description: 'News, new paintings and upcoming shows from Natalie Dixon.'
 layout: blog
 permalink: /blog/index.html
 ---

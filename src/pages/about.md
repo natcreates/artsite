@@ -1,7 +1,7 @@
 ---
 title: About
 permalink: /about/index.html
-description: About this starter
+description: 'About Natalie Dixon, a self-taught visionary artist based in London.'
 layout: about
 youtube: true
 ---
