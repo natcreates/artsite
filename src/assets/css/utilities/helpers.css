@@ -1,0 +1,36 @@
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-underline {
+  text-decoration-line: none;
+}
+
+.text-step-0 {
+  font-size: var(--size-step-0);
+}
+
+.mt-l-xl {
+  margin-top: var(--space-l-xl);
+}
+
+/* Visible to screen readers only: https://www.a11yproject.com/posts/how-to-hide-content/ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

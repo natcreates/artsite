@@ -3,7 +3,7 @@
 const postcss = require('postcss');
 const postcssImport = require('postcss-import');
 const postcssImportExtGlob = require('postcss-import-ext-glob');
-const tailwindcss = require('tailwindcss');
+const designTokens = require('../postcss/design-tokens.js');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
@@ -21,7 +21,7 @@ module.exports = eleventyConfig => {
         let output = await postcss([
           postcssImportExtGlob,
           postcssImport,
-          tailwindcss,
+          designTokens,
           autoprefixer,
           cssnano
         ]).process(content, {
