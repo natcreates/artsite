@@ -1,8 +1,11 @@
-const postcss = require('postcss');
-const slugify = require('slugify');
+import {createRequire} from 'node:module';
 
-const clampGenerator = require('../../src/assets/css-utils/clamp-generator.js');
+import postcss from 'postcss';
+import slugify from 'slugify';
 
+import clampGenerator from '../../src/assets/css-utils/clamp-generator.js';
+
+const require = createRequire(import.meta.url);
 const colors = require('../../src/assets/design-tokens/colors.json');
 const fonts = require('../../src/assets/design-tokens/fonts.json');
 const spacing = require('../../src/assets/design-tokens/spacing.json');
@@ -47,4 +50,4 @@ const designTokens = () => ({
 
 designTokens.postcss = true;
 
-module.exports = designTokens;
+export default designTokens;

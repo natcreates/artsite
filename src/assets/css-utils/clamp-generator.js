@@ -1,5 +1,8 @@
 /** © Andy Bell - https://buildexcellentwebsit.es/ */
 
+import {createRequire} from 'node:module';
+
+const require = createRequire(import.meta.url);
 const viewports = require('../design-tokens/viewports.json');
 
 /**
@@ -38,4 +41,4 @@ const clampGenerator = tokens => {
   });
 };
 
-module.exports = clampGenerator;
+export default clampGenerator;

@@ -1,6 +1,6 @@
-const crypto = require('node:crypto');
-const fs = require('node:fs');
-const fg = require('fast-glob');
+import crypto from 'node:crypto';
+import fs from 'node:fs';
+import fg from 'fast-glob';
 
 /** Short hash of a set of source files, so an asset URL only changes when the asset does. */
 const hashOf = pattern => {
@@ -13,7 +13,7 @@ const hashOf = pattern => {
   return hash.digest('hex').slice(0, 8);
 };
 
-module.exports = {
+export default {
   cssHash: hashOf('src/assets/css/**/*.css'),
   jsHash: hashOf('src/assets/scripts/**/*.js')
 };

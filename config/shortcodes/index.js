@@ -1,6 +1,2 @@
-const includeRaw = require('./includeRaw');
-const liteYoutube = require('./youtube-lite');
-module.exports = {
-  includeRaw,
-  liteYoutube
-};
+export {default as includeRaw} from './includeRaw/index.js';
+export {default as liteYoutube} from './youtube-lite/index.js';

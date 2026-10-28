@@ -1,19 +1,17 @@
 {
-  "name": "eleventy-excellent",
+  "name": "artsite",
   "version": "1.5.4",
-  "description": "Eleventy starter based on the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
-  "author": "Lene Saile",
+  "description": "Website for visionary artist Natalie Dixon. Built on Lene Saile's eleventy-excellent starter.",
+  "author": "Natalie Dixon",
   "license": "ISC",
-  "main": ".eleventy.js",
+  "main": "eleventy.config.js",
   "engines": {
-    "node": ">=16.x.x"
+    "node": ">=20"
   },
   "scripts": {
     "clean": "rimraf dist",
-    "dev:11ty": "eleventy --serve --watch",
-    "build:11ty": "eleventy",
-    "start": "run-p dev:*",
-    "build": "run-s clean build:*"
+    "start": "eleventy --serve",
+    "build": "rimraf dist && eleventy"
   },
   "keywords": [],
   "repository": {
@@ -21,43 +19,35 @@
     "url": "https://github.com/madrilene/eleventy-excellent.git"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-fetch": "^4.0.0",
-    "@11ty/eleventy-img": "^3.0.0",
-    "@11ty/eleventy-plugin-bundle": "^1.0.4",
-    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "tailwindcss": "^3.0.23"
+    "@11ty/eleventy": "^3.1.7",
+    "@11ty/eleventy-img": "^7.1.1",
+    "@11ty/eleventy-plugin-rss": "^3.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
   },
   "devDependencies": {
     "@toycode/markdown-it-class": "^1.2.4",
-    "autoprefixer": "^10.4.13",
-    "clean-css": "^5.3.1",
-    "cssnano": "^6.0.0",
-    "dayjs": "^1.11.5",
-    "dotenv": "^16.0.3",
-    "esbuild": "^0.19.0",
-    "fast-glob": "^3.3.1",
-    "html-minifier-terser": "^7.1.0",
-    "lodash": "^4.17.21",
-    "markdown-it": "^13.0.1",
-    "markdown-it-abbr": "^1.0.4",
-    "markdown-it-anchor": "^8.6.5",
-    "markdown-it-emoji": "^2.0.2",
-    "markdown-it-footnote": "^3.0.3",
+    "autoprefixer": "^10.6.2",
+    "clean-css": "^5.3.3",
+    "cssnano": "^8.0.10",
+    "dayjs": "^1.11.23",
+    "esbuild": "^0.28.2",
+    "fast-glob": "^3.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "lodash": "^4.18.1",
+    "markdown-it": "^14.3.3",
+    "markdown-it-abbr": "^2.0.0",
+    "markdown-it-anchor": "^10.0.0",
+    "markdown-it-emoji": "^3.1.0",
+    "markdown-it-footnote": "^4.0.0",
     "markdown-it-link-attributes": "^4.0.1",
-    "markdown-it-mark": "^3.0.1",
-    "markdown-it-prism": "^2.3.0",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-prism": "^4.0.0",
     "netlify-plugin-cache": "^1.0.3",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.8",
-    "postcss-cli": "^10.0.0",
-    "postcss-import": "^15.0.0",
+    "postcss": "^8.5.32",
+    "postcss-import": "^17.0.1",
     "postcss-import-ext-glob": "^2.0.1",
-    "postcss-js": "^4.0.0",
-    "rimraf": "^5.0.0",
-    "sanitize-html": "^2.7.2",
-    "slugify": "^1.6.5"
-  }
+    "rimraf": "^6.1.3",
+    "slugify": "^1.6.9"
+  },
+  "type": "module"
 }

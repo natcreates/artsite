@@ -1,23 +1,17 @@
 /**
- * I strive to keep the `.eleventy.js` file clean and uncluttered. Most adjustments must be made in:
+ * Most adjustments belong in:
  *  - `./config/collections/index.js`
  *  - `./config/filters/index.js`
- *  - `./config/plugins/index.js`
+ *  - `./config/plugins/`
  *  - `./config/shortcodes/index.js`
  *  - `./config/transforms/index.js`
  */
 
-// JSDoc comment: Hint VS Code for eleventyConfig autocompletion. © Henry Desroches - https://gist.github.com/xdesro/69583b25d281d055cd12b144381123bf
+import lodash from 'lodash';
+import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+import pluginRss from '@11ty/eleventy-plugin-rss';
 
-/**
- *  @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig
- */
-
-// get package.json
-const packageVersion = require('./package.json').version;
-
-// module import filters
-const {
+import {
   limit,
   toHtml,
   where,
@@ -26,38 +20,21 @@ const {
   toAbsoluteUrl,
   stripHtml,
   minifyCss,
-  minifyJs,
   mdInline,
   splitlines
-} = require('./config/filters/index.js');
+} from './config/filters/index.js';
+import {includeRaw, liteYoutube} from './config/shortcodes/index.js';
+import {getAllPosts, getPaintings} from './config/collections/index.js';
+import {svgToJpeg} from './config/events/index.js';
+import markdownLib from './config/plugins/markdown.js';
+import {slugifyString} from './config/utils/index.js';
+import htmlConfig from './config/transforms/html-config.js';
+import cssConfig from './config/template-languages/css-config.js';
+import jsConfig from './config/template-languages/js-config.js';
 
-// module import shortcodes
-const {
-  includeRaw,
-  liteYoutube
-} = require('./config/shortcodes/index.js');
-
-// module import collections
-const {getAllPosts, getPaintings} = require('./config/collections/index.js');
-
-// module import events
-const {svgToJpeg} = require('./config/events/index.js');
-
-// plugins
-const markdownLib = require('./config/plugins/markdown.js');
-const {EleventyRenderPlugin} = require('@11ty/eleventy');
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const {slugifyString} = require('./config/utils');
-const {escape} = require('lodash');
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
-const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
-const {getFeatured} = require('./config/filters');
-
-module.exports = eleventyConfig => {
+export default eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
-  eleventyConfig.addWatchTarget('./utils/*.js');
 
   // --------------------- layout aliases -----------------------
   eleventyConfig.addLayoutAlias('base', 'base.njk');
@@ -72,7 +49,7 @@ module.exports = eleventyConfig => {
   // 	---------------------  Custom filters -----------------------
   eleventyConfig.addFilter('limit', limit);
   eleventyConfig.addFilter('where', where);
-  eleventyConfig.addFilter('escape', escape);
+  eleventyConfig.addFilter('escape', lodash.escape);
   eleventyConfig.addFilter('toHtml', toHtml);
   eleventyConfig.addFilter('toIsoString', toISOString);
   eleventyConfig.addFilter('formatDate', formatDate);
@@ -82,31 +59,24 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('toJson', JSON.stringify);
   eleventyConfig.addFilter('fromJson', JSON.parse);
   eleventyConfig.addFilter('cssmin', minifyCss);
-  eleventyConfig.addNunjucksAsyncFilter('jsmin', minifyJs);
   eleventyConfig.addFilter('md', mdInline);
   eleventyConfig.addFilter('splitlines', splitlines);
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
-  eleventyConfig.addFilter('getFeatured', getFeatured);
-  eleventyConfig.addFilter(
-    "relative",
-    (page, root = "/") => page.replace('src', '')
-  );
-
+  eleventyConfig.addFilter('relative', page => page.replace('src', ''));
 
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
-  eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
 
   // 	--------------------- Custom transforms ---------------------
-  eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
+  eleventyConfig.addPlugin(htmlConfig);
 
   // 	--------------------- Custom Template Languages ---------------------
-  eleventyConfig.addPlugin(require('./config/template-languages/css-config.js'));
-  eleventyConfig.addPlugin(require('./config/template-languages/js-config.js'));
+  eleventyConfig.addPlugin(cssConfig);
+  eleventyConfig.addPlugin(jsConfig);
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
@@ -116,12 +86,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.on('afterBuild', svgToJpeg);
 
   // 	--------------------- Plugins ---------------------
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
-  eleventyConfig.addPlugin(bundlerPlugin);
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
@@ -136,12 +103,10 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- general config -----------------------
   return {
-    // Pre-process *.md, *.html and global data files files with: (default: `liquid`)
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
 
-    // Optional (default is set): If your site deploys to a subdirectory, change `pathPrefix`, for example with with GitHub pages
     pathPrefix: '/',
 
     dir: {

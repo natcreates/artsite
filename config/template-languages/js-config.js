@@ -1,8 +1,8 @@
-// CSS and JavaScript as first-class citizens in Eleventy: https://pepelsbey.dev/articles/eleventy-css-js/
+// CSS and JavaScript as first-class citizens in Eleventy: https://pepelsbey.dev/articles/eleventy-css-js/
 
-const esbuild = require('esbuild');
+import esbuild from 'esbuild';
 
-module.exports = eleventyConfig => {
+export default eleventyConfig => {
   eleventyConfig.addTemplateFormats('js');
 
   eleventyConfig.addExtension('js', {

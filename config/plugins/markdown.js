@@ -1,13 +1,14 @@
-const markdownIt = require('markdown-it');
-const markdownItPrism = require('markdown-it-prism');
-const markdownItAnchor = require('markdown-it-anchor');
-const markdownItClass = require('@toycode/markdown-it-class');
-const markdownItLinkAttributes = require('markdown-it-link-attributes');
-const markdownItEmoji = require('markdown-it-emoji');
-const markdownItFootnote = require('markdown-it-footnote');
-const markdownitMark = require('markdown-it-mark');
-const markdownitAbbr = require('markdown-it-abbr');
-const {slugifyString} = require('../utils');
+import markdownIt from 'markdown-it';
+import markdownItPrism from 'markdown-it-prism';
+import markdownItAnchor from 'markdown-it-anchor';
+import markdownItClass from '@toycode/markdown-it-class';
+import markdownItLinkAttributes from 'markdown-it-link-attributes';
+import {full as markdownItEmoji} from 'markdown-it-emoji';
+import markdownItFootnote from 'markdown-it-footnote';
+import markdownitMark from 'markdown-it-mark';
+import markdownitAbbr from 'markdown-it-abbr';
+
+import {slugifyString} from '../utils/index.js';
 
 const markdownLib = markdownIt({
   html: true,
@@ -47,4 +48,4 @@ const markdownLib = markdownIt({
   .use(markdownitMark)
   .use(markdownitAbbr);
 
-module.exports = markdownLib;
+export default markdownLib;

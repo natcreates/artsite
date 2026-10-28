@@ -1,13 +1,14 @@
-// CSS and JavaScript as first-class citizens in Eleventy: https://pepelsbey.dev/articles/eleventy-css-js/
+// CSS and JavaScript as first-class citizens in Eleventy: https://pepelsbey.dev/articles/eleventy-css-js/
 
-const postcss = require('postcss');
-const postcssImport = require('postcss-import');
-const postcssImportExtGlob = require('postcss-import-ext-glob');
-const designTokens = require('../postcss/design-tokens.js');
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
+import postcss from 'postcss';
+import postcssImport from 'postcss-import';
+import postcssImportExtGlob from 'postcss-import-ext-glob';
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
 
-module.exports = eleventyConfig => {
+import designTokens from '../postcss/design-tokens.js';
+
+export default eleventyConfig => {
   eleventyConfig.addTemplateFormats('css');
 
   eleventyConfig.addExtension('css', {

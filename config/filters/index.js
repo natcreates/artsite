@@ -1,14 +1,16 @@
-const lodash = require('lodash');
-const dayjs = require('dayjs');
-const CleanCSS = require('clean-css');
-const markdownLib = require('../plugins/markdown');
-const site = require('../../src/_data/meta');
-const {throwIfNotType} = require('../utils');
-const md = require('markdown-it')();
-const descriptions = require('../../src/_data/descriptions');
+import lodash from 'lodash';
+import dayjs from 'dayjs';
+import CleanCSS from 'clean-css';
+import markdownIt from 'markdown-it';
+
+import markdownLib from '../plugins/markdown.js';
+import site from '../../src/_data/meta.js';
+import {throwIfNotType} from '../utils/index.js';
+
+const md = markdownIt();
 
 /** Returns the first `limit` elements of the given array. */
-const limit = (array, limit) => {
+export const limit = (array, limit) => {
   if (limit < 0) {
     throw new Error(`Negative limits are not allowed: ${limit}.`);
   }
@@ -16,22 +18,22 @@ const limit = (array, limit) => {
 };
 
 /** Returns all entries from the given array that match the specified key:value pair. */
-const where = (arrayOfObjects, keyPath, value) =>
+export const where = (arrayOfObjects, keyPath, value) =>
   arrayOfObjects.filter(object => lodash.get(object, keyPath) === value);
 
 /** Converts the given markdown string to HTML, returning it as a string. */
-const toHtml = markdownString => {
+export const toHtml = markdownString => {
   return markdownLib.renderInline(markdownString);
 };
 
 /** Removes all tags from an HTML string. */
-const stripHtml = str => {
+export const stripHtml = str => {
   throwIfNotType(str, 'string');
   return str.replace(/<[^>]+>/g, '');
 };
 
 /** Formats the given string as an absolute url. */
-const toAbsoluteUrl = url => {
+export const toAbsoluteUrl = url => {
   throwIfNotType(url, 'string');
   // Replace trailing slash, e.g., site.com/ => site.com
   const siteUrl = site.url.replace(/\/$/, '');
@@ -42,35 +44,12 @@ const toAbsoluteUrl = url => {
 };
 
 /** Converts the given date string to ISO8610 format. */
-const toISOString = dateString => dayjs(dateString).toISOString();
+export const toISOString = dateString => dayjs(dateString).toISOString();
 
 /** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format */
-const formatDate = (date, format) => dayjs(date).format(format);
+export const formatDate = (date, format) => dayjs(date).format(format);
 
-const minifyCss = code => new CleanCSS({}).minify(code).styles;
-
-const minifyJs = async (code, ...rest) => {
-  const callback = rest.pop();
-  const cacheKey = rest.length > 0 ? rest[0] : null;
-
-  try {
-    if (cacheKey && jsminCache.hasOwnProperty(cacheKey)) {
-      const cacheValue = await Promise.resolve(jsminCache[cacheKey]); // Wait for the data, wrapped in a resolved promise in case the original value already was resolved
-      callback(null, cacheValue.code); // Access the code property of the cached value
-    } else {
-      const minified = esbuild.transform(code, {
-        minify: true
-      });
-      if (cacheKey) {
-        jsminCache[cacheKey] = minified; // Store the promise which has the minified output (an object with a code property)
-      }
-      callback(null, (await minified).code); // Await and use the return value in the callback
-    }
-  } catch (err) {
-    console.error('jsmin error: ', err);
-    callback(null, code); // Fail gracefully.
-  }
-};
+export const minifyCss = code => new CleanCSS({}).minify(code).styles;
 
 /**
  * Render content as inline markdown if single line, or full
@@ -80,7 +59,7 @@ const minifyJs = async (code, ...rest) => {
  * @return {string|undefined}
  */
 
-const mdInline = (content, opts) => {
+export const mdInline = (content, opts) => {
   if (!content) {
     return;
   }
@@ -101,9 +80,9 @@ const mdInline = (content, opts) => {
 };
 
 // source: https://github.com/bnijenhuis/bnijenhuis-nl/blob/main/.eleventy.js
-const splitlines = (input, maxCharLength) => {
+export const splitlines = (input, maxCharLength) => {
   const parts = input.split(' ');
-  const lines = parts.reduce(function(acc, cur) {
+  const lines = parts.reduce(function (acc, cur) {
     if (!acc.length) {
       return [cur];
     }
@@ -120,31 +99,4 @@ const splitlines = (input, maxCharLength) => {
   }, []);
 
   return lines;
-};
-
-const getFeatured = (images) =>
-  images.filter((image) => descriptions[image.name].featured).sort((image1, image2) => {
-    if (descriptions[image1.name].featuredOrder < descriptions[image2.name].featuredOrder) {
-      return -1;
-    }
-    if (descriptions[image1.name].featuredOrder > descriptions[image2.name].featuredOrder) {
-      return 1;
-    }
-    return 0;
-  });
-
-
-module.exports = {
-  limit,
-  toHtml,
-  where,
-  toISOString,
-  formatDate,
-  toAbsoluteUrl,
-  stripHtml,
-  minifyCss,
-  minifyJs,
-  mdInline,
-  splitlines,
-  getFeatured
 };

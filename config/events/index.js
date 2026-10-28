@@ -1,10 +1,10 @@
 // https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/
-// concerts SVG to JPEG for open graph images
+// converts SVG to JPEG for open graph images
 
-const fs = require('fs');
-const Image = require('@11ty/eleventy-img');
+import fs from 'node:fs';
+import Image from '@11ty/eleventy-img';
 
-const svgToJpeg = function () {
+export const svgToJpeg = function () {
   const socialPreviewImagesDir = 'dist/assets/images/social-preview/';
   fs.readdir(socialPreviewImagesDir, (err, files) => {
     if (!!files && files.length > 0) {
@@ -14,7 +14,7 @@ const svgToJpeg = function () {
           Image(imageUrl, {
             formats: ['jpeg'],
             outputDir: './' + socialPreviewImagesDir,
-            filenameFormat: function (id, src, width, format, options) {
+            filenameFormat: function (id, src, width, format) {
               let outputFileName = fileName.substring(0, fileName.length - 4);
               return `${outputFileName}.${format}`;
             }
@@ -25,8 +25,4 @@ const svgToJpeg = function () {
       console.log('⚠ No social images found');
     }
   });
-};
-
-module.exports = {
-  svgToJpeg
 };

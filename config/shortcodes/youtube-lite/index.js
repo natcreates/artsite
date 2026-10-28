@@ -7,4 +7,5 @@ const liteYoutube = (id, label) => {
 </lite-youtube></div>
     `;
 };
-module.exports = liteYoutube;
+
+export default liteYoutube;

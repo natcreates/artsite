@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   top: [
     {
       text: 'Paintings',
@@ -20,5 +20,5 @@ module.exports = {
       text: 'Shop',
       url: 'https://www.etsy.com/uk/shop/NatalieDixonArt'
     }
-  ],
+  ]
 };
