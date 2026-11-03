@@ -28,14 +28,6 @@
     "yearFinished": "2020",
     "alt": "A long-haired figure gazes upward, flanked by reaching hands: a shadowed skull on one side, a burning orange swirl on the other."
   },
-  "awaken": {
-    "title": "Awaken",
-    "gallery": "paintings",
-    "format": "Acrylics on canvas board",
-    "description": "14x16 inches, 2021",
-    "yearFinished": "2021",
-    "alt": "A woman lifts her face to a blazing sun in a blue sky, magnolia and lily blooms opening around her shoulders out of the darkness below."
-  },
   "omnibeat": {
     "title": "Omnibeat",
     "gallery": "paintings",
@@ -43,14 +35,6 @@
     "description": "12x14 inches, 2022",
     "yearFinished": "2022",
     "alt": "A pale figure with bare branches growing from her head reaches towards the sun, a full moon resting in her other hand against a red ground."
-  },
-  "visitation": {
-    "title": "Visitation",
-    "gallery": "paintings",
-    "format": "Oils/Paper",
-    "description": "A3, 2020",
-    "yearFinished": "2020",
-    "alt": "A short-haired person in round glasses and a red top looks out at the viewer, a glowing pink neon butterfly beside them and a green street scene behind."
   },
   "albedo": {
     "title": "Albedo",
@@ -126,5 +110,12 @@
     "description": "60x50cm, 2020-21",
     "yearFinished": "2021",
     "alt": "A woman crouches at a small fire in a forest clearing, looking up at a bright star and falling meteors in the night sky."
+  },
+  "earthborn": {
+    "gallery": "paintings",
+    "title": "Earthborn",
+    "format": "Oils/Canvas",
+    "description": "18x24 inches, 2026.",
+    "alt": "A red-haired figure lies on her stomach in a dark, misty forest, cupping a small glowing golden face she has dug from the earth. Rays of light filled with eyes shine out from the golden face, and a crow and snake look on."
   }
 }
