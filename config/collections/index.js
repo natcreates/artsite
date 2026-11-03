@@ -1,4 +1,3 @@
-import sortBy from 'lodash/sortBy.js';
 import fg from 'fast-glob';
 
 const paintingImagePaths = fg.sync(['**/src/assets/images/paintings/*']);
@@ -9,15 +8,17 @@ export const getAllPosts = collection => {
   return projects.reverse();
 };
 
-export const getPaintings = () => {
-  let paintingImagesOutput = [];
-  const sortedImagePaths = sortBy(paintingImagePaths);
+const sequence = link => parseInt(link, 10);
 
-  for (let path of sortedImagePaths) {
+/** Paintings newest first. A new painting takes the next number up; gaps are fine. */
+export const getPaintings = () => {
+  const paintingImagesOutput = [];
+
+  for (let path of paintingImagePaths) {
     const link = path.replace('src/assets/images/paintings/', '').replace(/@\dx\..*/, '');
     const name = link.replace(/\d+-/, '');
     paintingImagesOutput.push({path, name, link});
   }
 
-  return paintingImagesOutput.reverse();
+  return paintingImagesOutput.sort((a, b) => sequence(b.link) - sequence(a.link));
 };
