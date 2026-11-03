@@ -1,15 +1,14 @@
 .about img {
     float: right;
-    max-inline-size: 400px;
+    max-inline-size: min(400px, 100%);
     margin-top: var(--space-m);
     margin-left: var(--space-m);
     margin-bottom: var(--space-m);
-    border-radius:0 !important;
 }
 
 .about p:first-of-type img {
     max-inline-size: 300px;
-    border-radius: 50% !important;
+    border-radius: 50%;
     height: 400px;
     width: 400px;
     block-size: auto;
@@ -21,6 +20,7 @@
 
 .about h3 {
     text-align: center;
+    margin-inline: auto;
     max-inline-size: 70ch;
 }
 
@@ -34,8 +34,20 @@
 }
 
 @media screen and (max-width: 600px) {
-    .about p:first-of-type img {
-        width: 100%;
-        max-inline-size: initial;
+    .about img,
+    .about p:first-of-type img,
+    .about .contact-photo {
+        float: none;
+        inline-size: 100%;
+        max-inline-size: 100%;
+        margin-inline: 0;
     }
+}
+.about .snake-divider {
+    margin-inline: auto;
+}
+
+.about .contact-photo {
+    border-radius: 50%;
+    max-inline-size: min(300px, 100%);
 }

@@ -9,7 +9,7 @@ blog:
 
 <p class="tagline">Surreal visions of death, rebirth &amp; becoming.</p>
 
-<hr class="tagline-rule">
+<hr class="snake-divider">
 
 ## 2026 Shows / Markets
 

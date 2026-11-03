@@ -3,26 +3,33 @@ title: About
 permalink: /about/index.html
 description: 'About Natalie Dixon, a self-taught visionary artist based in London.'
 layout: about
+redirectFrom:
+  - /contact/
+redirectHash: '#get-in-touch'
 youtube: true
 ---
 
-<p>{% image "masters/content/me.png", "Natalie working on a painting", "(min-width: 601px) 300px, 100vw", "", "eager" %}</p>
+<p>{% image "masters/content/me.png", "Natalie painting a sepia canvas at an easel on a balcony above a wooded valley", "(min-width: 601px) 300px, 100vw", "", "eager" %}</p>
 
-Natalie Dixon is a self-taught artist based in London, UK. Her childhood mainly involved drawing pictures and writing words next to them; not much has changed. An early urge to express and tell stories led to an English degree, opening imaginary worlds but suppressing her visual side. In 2019, however, a personal crisis revealed that some things are beyond words. An emotional landscape unfolded, and she began painting in earnest, drawing on a palette discovered in earlier travels: the breadth and beauty of nature, and the world of visionary and psychedelic art. After attending workshops run by artists Daniel Mirante and Amanda Sage, she began a life-long work of integration, mapping nature to emotion, soul to matter, and stories to the human form.
+Natalie Dixon is a self-taught artist based in London, UK. Her childhood mainly involved drawing pictures and writing words next to them; not much has changed. An early urge to express and tell stories led to an English degree, opening imaginary worlds but suppressing her visual side. In 2019, however, a personal crisis revealed that some things are beyond words. An emotional landscape unfolded, and she began painting in earnest, drawing on a palette discovered in earlier travels: the breadth and beauty of nature, and the world of visionary and psychedelic art.
 
-Since 2020 her work has featured in several online exhibitions, including the [2021 Into the Wild](http://www1.theartistlounge.org/?tm=1&subid4=1684514047.0257260000) exhibition hosted by The Artist Lounge, in which her work ‘In their arms’ was a semi-finalist. She exhibits in person at festivals (Something Different, Lovejam Campout, Anthropos) , enjoying the opportunity for inspiration and direct connection. Working in oils and acrylic, she explores the link between the outer world and inner truths, and the mythic nature of individual transformation.
+Working in oils and acrylics, her paintings draw on natural, mythological and archetypal imagery to explore the emotional landscape of transformation: its darkness and difficulty, its moments of revelation, and the possibility of renewal. Nature becomes psychological, old symbols are combined to make intuitive leaps, and the female body acts as a bridge between the individual and the general. Her work is an ongoing attempt to give visual form to experiences that are difficult to articulate.
+
+Since 2020, her work has featured in several online exhibitions, including the 2021 Into the Wild exhibition hosted by The Artist Lounge, where her painting [In Their Arms](/artwork/in-their-arms/) was selected as a semi-finalist. She also exhibits at festivals including Origin, Lovejam Campout and Noisily.
 
 {% image "masters/content/anthropos.jpg", "Display at Anthropos festival", "(min-width: 601px) 400px, 100vw", "" %}
 
 ## Artist statement
 
-I paint in response to emotion. My paintings are acts of honesty that provoke honesty in turn: a real response in the viewer, a feeling or a memory. I paint because I can only understand my experiences through image-making, and want to transmit that understanding. Surrealism, fantastic realism, visionary art and Jungian psychology are all major influences because metaphor allows me to touch the personal and make it general. They help unveil the real magic of life. I endeavour to find the ‘archetype’ of the experience, and often switch between layered indirect techniques to communicate the numinous, and direct painting to express the concrete.
+I paint in response to emotion. My paintings are acts of honesty that provoke honesty in turn: a real response in the viewer, a feeling or a memory. I paint because I can only understand my experiences through image-making, and want to transmit that understanding. Surrealism, fantastic realism, visionary art and Jungian psychology are all major influences because metaphor allows me to touch the personal and make it general. I endeavour to find the ‘archetype’ of the experience, and often switch between layered indirect techniques to communicate the numinous, and direct painting to express the concrete.
 
 I also paint from a joy in the rhythm of the human body, and from a wonder at the shifting of light and shadow over a mountainside, and from grief at an achingly brilliant yet transient sky… It’s all emotion, manifested.
 
 The story I take my scenes from is told by nature: the eternal cycle of death and rebirth, loss and healing. Through tonal contrasts and flowing lines, I convey the motion ever-present in our hearts and in the world around us, and always the potential for change.
 
-### Past events
+<hr class="snake-divider">
+
+<h3 class="gradient-text" id="past-events">Past events</h3>
 
 - [Portals to the Divine, 11th Toronto Visionary Art Exhibit, online](https://www.facebook.com/events/s/11th-toronto-visionary-art-exh/770966975974839) - 5th December 2025-15th January 2026
 - [Satanic Flea Market AntiChristmas Fayre, London](https://baphomart.com/satanic-flea-market/?srsltid=AfmBOoqNyZi04W5dNk9hwFbCfWlR_0ANrf-TQKmqlro9ruJYBZw242LN) - 14th December 2025
@@ -44,3 +51,11 @@ The story I take my scenes from is told by nature: the eternal cycle of death an
 - [Into the Wild online exhibition](http://www1.theartistlounge.org/?tm=1&subid4=1684514047.0257260000) - May 2021
 - [Transition online exhibition](https://www.visiontrain.org/transition.html) - March 2021
 - [Mushroom Magic online exhibition](https://www.visiontrain.org/mushroommagic.html) - Aug 2020
+
+<hr class="snake-divider">
+
+<h3 class="gradient-text" id="get-in-touch">Get in touch</h3>
+
+{% image "masters/content/me-painting.jpeg", "Natalie at an easel in a sunlit garden, painting the mountain scene of In Their Arms", "(min-width: 601px) 300px, 100vw", "contact-photo" %}
+
+<p>I am available for commissions, festival gallery and live painting bookings. The best way to reach me is through <a href="https://instagram.com/nataliedixon_art" target="_blank" rel="noopener">Instagram</a> or <a href="https://www.facebook.com/NatalieDixonArt" target="_blank" rel="noopener">Facebook</a>. You can also email natalie.dixon@cantab.net.</p>

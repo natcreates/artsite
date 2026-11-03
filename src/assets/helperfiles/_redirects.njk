@@ -6,7 +6,7 @@ excludeFromSitemap: true
 {% for page in collections.all %}
   {% if page.url and page.data.redirectFrom %}
     {% for oldUrl in page.data.redirectFrom %}
-{{ oldUrl }}  {{ page.url }}
+{{ oldUrl }}  {{ page.url }}{{ page.data.redirectHash or '' }}
     {% endfor %}
   {% endif %}
 {% endfor %}

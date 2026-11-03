@@ -7,16 +7,3 @@
     letter-spacing: 0.01em;
     text-wrap: balance;
 }
-
-.tagline-rule {
-    --flow-space: var(--space-m);
-    inline-size: 140px;
-    aspect-ratio: 349 / 99;
-    margin-inline-start: 0;
-    border: 0;
-    background: url('/assets/images/snake.png') left center / contain no-repeat;
-}
-
-.tagline-rule + * {
-    --flow-space: var(--space-m);
-}

@@ -1,10 +1,9 @@
 .page img {
   float: right;
-  max-inline-size: 400px;
+  max-inline-size: min(400px, 100%);
   margin-top: var(--space-m);
   margin-left: var(--space-m);
   margin-bottom: var(--space-m);
-  border-radius:50%;
 }
 
 .page {
@@ -14,4 +13,12 @@
 
 p {
   margin-bottom: var(--space-m);
+}
+@media screen and (max-width: 600px) {
+  .page img {
+    float: none;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    margin-inline: 0;
+  }
 }

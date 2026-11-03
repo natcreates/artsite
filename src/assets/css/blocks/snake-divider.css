@@ -1,0 +1,13 @@
+.snake-divider {
+    --flow-space: var(--space-m);
+    margin-block: var(--space-m);
+    inline-size: 140px;
+    aspect-ratio: 349 / 99;
+    margin-inline-start: 0;
+    border: 0;
+    background: url('/assets/images/snake.png') left center / contain no-repeat;
+}
+
+.snake-divider + * {
+    --flow-space: var(--space-m);
+}

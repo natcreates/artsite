@@ -14,7 +14,7 @@ export default {
     },
     {
       text: 'Contact',
-      url: '/contact/'
+      url: '/about/#get-in-touch'
     },
     {
       text: 'Shop',
