@@ -1,20 +1,21 @@
+:root {
+  --gradient-stops: #ec91e2, #ff8753, var(--color-primary);
+  --gradient-accent: linear-gradient(to right, var(--gradient-stops));
+}
+
+/* fit-content keeps the painted box the width of the glyphs, so the gradient
+   scales with the fluid font size instead of with the container */
 .gradient-text {
   color: transparent;
-  background: conic-gradient(
-    #ec91e2,
-    #ff8753,
-    var(--color-primary)
-  );
+  background: conic-gradient(var(--gradient-stops));
   padding: 0;
   background-size: 50%;
   background-clip: text;
+  inline-size: fit-content;
+  max-inline-size: 100%;
 }
 
 .gradient {
-  background: conic-gradient(
-          #ec91e2,
-          #ff8753,
-          var(--color-primary)
-  );
+  background: conic-gradient(var(--gradient-stops));
   background-size: 50%;
 }

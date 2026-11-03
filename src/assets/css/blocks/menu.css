@@ -69,21 +69,26 @@ nav.navbar a {
   padding: 0.1rem;
   text-decoration: none;
   display: block;
-  text-decoration-line: underline;
-  text-decoration-color: var(--border-color, transparent);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 0.3em;
+  position: relative;
 }
 
-/* Change the border-color on :hover and :focus */
+/* A painted bar rather than text-decoration, which cannot take a gradient.
+   ::before because ::after carries the external-link icon. */
+nav.navbar a::before {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: -0.2em;
+  block-size: 3px;
+  background: var(--underline, transparent);
+}
+
 nav.navbar a:where(:hover, :focus) {
-  --border-color: var(--text-color);
+  --underline: var(--text-color);
 }
 
-/* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
-  --border-color: var(--color-primary);
-  --text-color: var(--color-light);
+  --underline: var(--gradient-accent);
 }
 
 /* Reset button styling */

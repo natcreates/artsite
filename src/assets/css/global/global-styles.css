@@ -119,7 +119,8 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='nataliedixonart.com'])::after {
+article [href^='http']:not([href*='nataliedixonart.com'])::after,
+nav.navbar [href^='http']:not([href*='nataliedixonart.com'])::after {
   display: inline-block;
   inline-size: 1em;
   block-size: 1em;
