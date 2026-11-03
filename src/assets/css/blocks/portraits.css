@@ -1,37 +1,21 @@
 .portraits {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-s);
     list-style: none;
-    padding: 0;
-    align-items: center;
-    overflow: hidden;
-    align-items: stretch;
+    margin: 0 auto;
+    padding: var(--space-s);
+    max-inline-size: 1100px;
 }
 
-.portraits li {
-    height: 480px;
-    overflow: hidden;
-    flex: 1 1 auto;
-}
-
-@media screen and (max-width: 700px) {
-    .portraits li {
-        flex: 1 1 auto;
+@media (min-width: 50rem) {
+    .portraits {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width: 600px) {
-    .portraits li {
-        flex: 0 0 33.33%;
-        height: 300px;
-    }
-}
-
-.portraits li:nth-child(5) {
-    object-position: left;
-}
-
-.portraits .artwork {
-    height: 100%;
-    width: 100%;
+.portraits img {
+    inline-size: 100%;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
 }

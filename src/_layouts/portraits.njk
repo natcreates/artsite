@@ -2,19 +2,19 @@
 layout: base
 ---
 
-{% set strip = "(min-width: 601px) 20vw, 33vw" %}
-{% set stripWidths = [400, 800, 1200] %}
+{% set portraitSizes = "(min-width: 1100px) 350px, (min-width: 50rem) 31vw, 48vw" %}
+{% set portraitWidths = [400, 800, 1200, 1600] %}
+<h1 class="sr-only">{{ title }}</h1>
 <ul class="portraits">
-  <li>{% image "masters/portraits/chris.jpg", "Oil portrait of a bearded man with a shaved head in a red t-shirt, against a grey background.", strip, "artwork", "lazy", stripWidths %}</li>
-  <li>{% image "masters/portraits/owen.jpg", "Oil portrait of a smiling man with a shaved head, narrow face and a pale beard in a red t-shirt, against a grey background.", strip, "artwork", "lazy", stripWidths %}</li>
-  <li>{% image "masters/portraits/annabel.jpg", "A blonde woman standing in a garden, holding up a framed oil portrait of herself.", strip, "artwork", "lazy", stripWidths %}</li>
-  <li>{% image "masters/portraits/emma.jpg", "Oil portrait of a smiling woman in dark-rimmed glasses with a tall swept-up quiff, against a grey background.", strip, "artwork", "lazy", stripWidths %}</li>
-  <li>{% image "masters/portraits/midnight.jpg", "Oil portrait of a dark-haired woman looking downwards, her face warmly lit against the shadow of her hair.", strip, "artwork", "lazy", stripWidths %}</li>
+  <li>{% image "masters/portraits/chris.jpg", "Oil portrait of a bearded man with a shaved head in a red t-shirt, against a grey background.", portraitSizes, "", "lazy", portraitWidths %}</li>
+  <li>{% image "masters/portraits/midnight.jpg", "Oil portrait of a dark-haired woman looking downwards, her face warmly lit against the shadow of her hair.", portraitSizes, "", "lazy", portraitWidths %}</li>
+  <li>{% image "masters/portraits/annabel.jpg", "A blonde woman standing in a garden, holding up a framed oil portrait of herself.", portraitSizes, "", "lazy", portraitWidths %}</li>
+  <li>{% image "masters/portraits/emma.jpg", "Oil portrait of a smiling woman in dark-rimmed glasses with a tall swept-up quiff, against a grey background.", portraitSizes, "", "lazy", portraitWidths %}</li>
+  <li>{% image "masters/portraits/owen.jpg", "Oil portrait of a smiling man with a shaved head, narrow face and a pale beard in a red t-shirt, against a grey background.", portraitSizes, "", "lazy", portraitWidths %}</li>
 </ul>
 
 <article class="region page">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
     {{ content | safe }}
   </div>
 </article>
