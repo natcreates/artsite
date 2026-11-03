@@ -7,13 +7,6 @@
   --flow-space: var(--space-s-m);
 }
 
-.prose .heading-anchor:is(:hover, :focus) {
-  text-decoration: underline;
-}
-.prose .heading-anchor {
-  text-decoration: none;
-}
-
 .prose mark {
   background: var(--color-primary-glare);
 }

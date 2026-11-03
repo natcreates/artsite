@@ -22,10 +22,7 @@ const markdownLib = markdownIt({
   })
   .use(markdownItAnchor, {
     slugify: slugifyString,
-    tabIndex: false,
-    permalink: markdownItAnchor.permalink.headerLink({
-      class: 'heading-anchor'
-    })
+    tabIndex: false
   })
   .use(markdownItClass, {
     ol: 'list',
