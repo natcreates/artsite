@@ -17,6 +17,22 @@
 }
 
 @font-face {
+  font-family: Lato;
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300;
+  src: local(''), url(/assets/fonts/lato/lato-lightitalic-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Lato;
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: local(''), url(/assets/fonts/lato/lato-italic-webfont.woff2) format('woff2');
+}
+
+@font-face {
   font-family: JuliusSansOne;
   font-style: normal;
   font-display: swap;

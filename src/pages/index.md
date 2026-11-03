@@ -7,6 +7,10 @@ blog:
   title: 'Blog'
 ---
 
+<p class="tagline">Surreal visions of death, rebirth &amp; becoming.</p>
+
+<hr class="tagline-rule">
+
 ## 2026 Shows / Markets
 
 [Origin Festival](https://originfestival.co.uk/) - July 10th-12th
