@@ -1,7 +1,5 @@
 import fg from 'fast-glob';
 
-const paintingImagePaths = fg.sync(['**/src/assets/images/paintings/*']);
-
 /** Returns all blog posts as a collection. */
 export const getAllPosts = collection => {
   const projects = collection.getFilteredByGlob('./src/posts/*.md');
@@ -14,8 +12,8 @@ const sequence = link => parseInt(link, 10);
 export const getPaintings = () => {
   const paintingImagesOutput = [];
 
-  for (let path of paintingImagePaths) {
-    const link = path.replace('src/assets/images/paintings/', '').replace(/@\dx\..*/, '');
+  for (let path of fg.sync(['masters/paintings/*.jpg'])) {
+    const link = path.replace('masters/paintings/', '').replace(/\.jpg$/, '');
     const name = link.replace(/\d+-/, '');
     paintingImagesOutput.push({path, name, link});
   }

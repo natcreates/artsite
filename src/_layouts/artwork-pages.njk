@@ -17,7 +17,8 @@ eleventyComputed:
 {% set painting = descriptions[image.name] %}
 <article class="artpage-wrapper">
 <figure class="artpage">
-<img src="/assets/images/paintings/{{image.link | slug }}@1x.jpg" alt="{{ painting.alt | default(painting.title) }}" class="artpage__image {% if painting.wide %} artpage__image--wide {% endif %}" />
+{% set alt = painting.alt | default(painting.title) %}
+{% image image.path, alt, "(min-width: 70rem) 992px, (min-width: 500px) 90vw, 100vw", "artpage__image" + (" artpage__image--wide" if painting.wide else ""), "eager" %}
 <figcaption>
 <h2>{{ painting.title }}</h2>
 <em class="artpage__format">{{ painting.format }}</em>

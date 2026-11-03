@@ -6,13 +6,13 @@ layout: about
 youtube: true
 ---
 
-![Natalie working on a painting](/assets/images/me.png)
+<p>{% image "masters/content/me.png", "Natalie working on a painting", "(min-width: 601px) 300px, 100vw", "", "eager" %}</p>
 
 Natalie Dixon is a self-taught artist based in London, UK. Her childhood mainly involved drawing pictures and writing words next to them; not much has changed. An early urge to express and tell stories led to an English degree, opening imaginary worlds but suppressing her visual side. In 2019, however, a personal crisis revealed that some things are beyond words. An emotional landscape unfolded, and she began painting in earnest, drawing on a palette discovered in earlier travels: the breadth and beauty of nature, and the world of visionary and psychedelic art. After attending workshops run by artists Daniel Mirante and Amanda Sage, she began a life-long work of integration, mapping nature to emotion, soul to matter, and stories to the human form.
 
 Since 2020 her work has featured in several online exhibitions, including the [2021 Into the Wild](http://www1.theartistlounge.org/?tm=1&subid4=1684514047.0257260000) exhibition hosted by The Artist Lounge, in which her work ‘In their arms’ was a semi-finalist. She exhibits in person at festivals (Something Different, Lovejam Campout, Anthropos) , enjoying the opportunity for inspiration and direct connection. Working in oils and acrylic, she explores the link between the outer world and inner truths, and the mythic nature of individual transformation.
 
-![Display at Anthropos festival](/assets/images/anthropos.jpg 'Display at Anthropos festival')
+{% image "masters/content/anthropos.jpg", "Display at Anthropos festival", "(min-width: 601px) 400px, 100vw", "" %}
 
 ## Artist statement
 

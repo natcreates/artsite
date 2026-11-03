@@ -51,10 +51,16 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture {
+img {
   max-inline-size: 100%;
+  block-size: auto;
   display: block;
+}
+
+/* The image shortcode wraps every img in a picture. Without this the picture, not the
+   img the layouts size, becomes the flex or grid child. */
+picture {
+  display: contents;
 }
 
 /* Inherit fonts for inputs and buttons */

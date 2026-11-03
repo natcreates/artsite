@@ -7,10 +7,15 @@ data: descriptions
 {% for image in collections.paintings %}
 {% if descriptions[image.name].galleryFeatured !== true %}
 {% set painting = descriptions[image.name] %}
+{% set alt = painting.alt | default(painting.title) %}
 <a class="gallery__link {% if painting.wide %} gallery__link--wide {% endif %}" href="/artwork/{{image.name}}">
 <figure class="gallery__figure">
 <div class="gallery__wrapper">
-<img src="{{ image.path | relative | url }}" alt="{{ painting.alt | default(painting.title) }}" class="artwork gallery__image {% if painting.wide %} gallery__image--wide {% endif %}" />
+{% if painting.wide %}
+{% image image.path, alt, "(min-width: 1400px) 680px, (min-width: 50rem) 63vw, 100vw", "artwork gallery__image gallery__image--wide" %}
+{% else %}
+{% image image.path, alt, "(min-width: 1400px) 330px, (min-width: 50rem) 31vw, 100vw", "artwork gallery__image" %}
+{% endif %}
 </div>
 </figure>
 </a>

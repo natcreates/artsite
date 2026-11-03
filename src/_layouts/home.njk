@@ -3,11 +3,13 @@ layout: base
 data: descriptions
 ---
 
+{% set strip = "(min-width: 601px) 25vw, 33vw" %}
+{% set stripWidths = [400, 800, 1200] %}
 <ul class="featured">
-  <li><a href="/artwork/in-their-arms/index.html"><img src="/assets/images/paintings/05-in-their-arms@1x.jpg" alt="{{ descriptions['in-their-arms'].alt }}" class="home-item__image artwork" /></a></li>
-  <li><a href="/portraits"><img src="/assets/images/portraits/midnight.jpg" alt="Oil portrait of a dark-haired woman looking downwards, her face warmly lit against the shadow of her hair." class="home-item__image artwork" /></a></li>
-  <li><a href="/artwork/renaissance/index.html"><img src="/assets/images/paintings/09-renaissance@1x.jpg" alt="{{ descriptions['renaissance'].alt }}" class="home-item__image artwork" /></a></li>
-  <li><a href="/artwork/albedo/index.html"><img src="/assets/images/paintings/04-albedo@1x.jpg" alt="{{ descriptions['albedo'].alt }}" class="home-item__image artwork" /></a></li>
+  <li><a href="/artwork/in-their-arms/index.html">{% image "masters/paintings/05-in-their-arms.jpg", descriptions['in-their-arms'].alt, strip, "home-item__image artwork", "eager", stripWidths %}</a></li>
+  <li><a href="/portraits">{% image "masters/portraits/midnight.jpg", "Oil portrait of a dark-haired woman looking downwards, her face warmly lit against the shadow of her hair.", strip, "home-item__image artwork", "eager", stripWidths %}</a></li>
+  <li><a href="/artwork/renaissance/index.html">{% image "masters/paintings/09-renaissance.jpg", descriptions['renaissance'].alt, strip, "home-item__image artwork", "eager", stripWidths %}</a></li>
+  <li><a href="/artwork/albedo/index.html">{% image "masters/paintings/04-albedo.jpg", descriptions['albedo'].alt, strip, "home-item__image artwork", "eager", stripWidths %}</a></li>
 </ul>
 
 

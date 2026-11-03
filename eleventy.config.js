@@ -23,9 +23,9 @@ import {
   mdInline,
   splitlines
 } from './config/filters/index.js';
-import {includeRaw, liteYoutube} from './config/shortcodes/index.js';
+import {includeRaw, liteYoutube, image} from './config/shortcodes/index.js';
 import {getAllPosts, getPaintings} from './config/collections/index.js';
-import {svgToJpeg} from './config/events/index.js';
+import {svgToJpeg, copyGeneratedImages} from './config/events/index.js';
 import markdownLib from './config/plugins/markdown.js';
 import {slugifyString} from './config/utils/index.js';
 import htmlConfig from './config/transforms/html-config.js';
@@ -35,6 +35,7 @@ import jsConfig from './config/template-languages/js-config.js';
 export default eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
+  eleventyConfig.addWatchTarget('./masters');
 
   // --------------------- layout aliases -----------------------
   eleventyConfig.addLayoutAlias('base', 'base.njk');
@@ -64,10 +65,10 @@ export default eleventyConfig => {
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
-  eleventyConfig.addFilter('relative', page => page.replace('src', ''));
 
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addShortcode('youtube', liteYoutube);
+  eleventyConfig.addAsyncShortcode('image', image);
   eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
 
@@ -84,6 +85,7 @@ export default eleventyConfig => {
 
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);
+  eleventyConfig.on('eleventy.after', copyGeneratedImages);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(syntaxHighlight);
