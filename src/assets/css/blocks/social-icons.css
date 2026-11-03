@@ -1,0 +1,10 @@
+/* .social-icon is the header's; the footer's links carry no class of their own */
+.social-icon,
+#social a {
+    transition: opacity 0.2s ease;
+}
+
+.social-icon:where(:hover, :focus),
+#social a:where(:hover, :focus) {
+    opacity: 0.6;
+}
