@@ -9,7 +9,5 @@ blog:
 
 ## 2026 Shows / Markets
 
-[Existance Festival](https://existancefestival.com/) – June 11th-14th
 [Origin Festival](https://originfestival.co.uk/) - July 10th-12th
-
-More TBC!
+[Autumn Salon Show, Candid Arts](https://www.candidartslondon.com/up-coming-exhibitions) - Oct 23rd-Nov 15th
