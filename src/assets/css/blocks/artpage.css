@@ -25,9 +25,11 @@
     margin-bottom: var(--space-s);
 }
 
+/* A flex item gets no size from its width/height attributes, so the caption beside it
+   would sit at zero width until the image decoded. Deriving the width from the image's
+   own shape keeps the box definite before the bytes arrive. */
 .artpage__image {
-    max-height: 85vh;
-    width: auto;
+    inline-size: min(100%, calc(85vh * var(--w) / var(--h)));
 }
 
 

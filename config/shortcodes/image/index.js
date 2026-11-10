@@ -29,12 +29,17 @@ export default async function image(
     sharpAvifOptions: {quality: 65, chromaSubsampling: '4:4:4'}
   });
 
+  // CSS cannot read the width/height attributes, so any layout that needs to derive a box
+  // from the shape of this particular image reads these instead.
+  const largest = metadata.jpeg.at(-1);
+
   return generateHTML(metadata, {
     alt,
     sizes,
     class: className,
     loading,
     decoding: 'async',
+    style: `--w:${largest.width};--h:${largest.height}`,
     ...(loading === 'eager' && {fetchpriority: 'high'})
   });
 }
